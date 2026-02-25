@@ -38,3 +38,89 @@ body {
     z-index: 1;
 }
 
+.section-cefi {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.section-cefi p {
+    font-size: 1.5rem;
+    color: #234F20;
+    margin-bottom: 2rem;
+}
+
+.btn-cefi {
+    background-color: #D2E23B;
+    color: #234F20;
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 0.75rem 2.5rem;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: none;
+}
+
+.btn-cefi:hover, .btn-cefi:focus {
+    background-color: #234F20;
+    color: #fff;
+}
+
+.section-carousel {
+    background: #faf8ef;
+    padding: 60px 0;
+}
+
+.carousel-img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    margin: 0 auto;
+}
+
+.carousel-paragraph {
+    font-size: 1.2rem;
+    color: #234F20;
+    margin-bottom: 1.5rem;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(40%) sepia(60%) saturate(400%) hue-rotate(60deg);
+}
+
+.section-carousel .carousel-control-prev,
+.section-carousel .carousel-control-next {
+    width: 4rem;
+    height: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    opacity: 0.8;
+}
+
+.section-carousel .carousel-control-prev {
+    left: -5rem;
+}
+
+.section-carousel .carousel-control-next {
+    right: -5rem;
+}
+
+@media (max-width: 991px) {
+    .carousel-img {
+        max-width: 300px;
+    }
+
+    .section-carousel {
+        padding: 30px 0;
+    }
+
+    .section-carousel .carousel-control-prev,
+    .section-carousel .carousel-control-next {
+        left: 0;
+        right: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
