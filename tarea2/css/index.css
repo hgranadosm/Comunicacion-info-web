@@ -1,3 +1,85 @@
+/* --- Footer CEFI --- */
+.cefi-footer {
+    background: #234F20;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.cefi-footer h4, .cefi-footer h5 {
+    color: #D2E23B;
+}
+.cefi-footer .footer-contact-list li,
+.cefi-footer .footer-address {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+.cefi-footer .footer-contact-list a {
+    color: #D2E23B;
+    text-decoration: underline;
+}
+.cefi-footer .footer-social {
+    margin-bottom: 1rem;
+}
+.cefi-footer .footer-social-icon {
+    display: inline-block;
+    margin-right: 0.7rem;
+    font-size: 2rem;
+    color: #D2E23B;
+    transition: color 0.3s;
+}
+.cefi-footer .footer-social-icon:hover {
+    color: #fff;
+}
+.cefi-footer .footer-menu li {
+    margin-bottom: 0.5rem;
+}
+.cefi-footer .footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+.cefi-footer .footer-menu a:hover {
+    color: #D2E23B;
+}
+.cefi-footer .footer-btn {
+    background-color: #D2E23B;
+    color: #234F20;
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.75rem 2.5rem;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: none;
+    display: inline-block;
+}
+.cefi-footer .footer-btn:hover, .cefi-footer .footer-btn:focus {
+    background-color: #234F20;
+    color: #fff;
+}
+.cefi-footer .footer-privacy a {
+    color: #D2E23B;
+    text-decoration: underline;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+.cefi-footer .footer-divider {
+    border-top: 1px solid #D2E23B;
+    opacity: 0.7;
+}
+.cefi-footer .footer-copyright {
+    color: #D2E23B;
+    font-size: 1rem;
+}
+@media (max-width: 991px) {
+    .cefi-footer .footer-btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .cefi-footer .footer-social-icon {
+        font-size: 1.5rem;
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Margarine&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /********************* ESTILOS GENRALES ******************************/
@@ -106,21 +188,193 @@ body {
     right: -5rem;
 }
 
+.section-involucrate-title {
+    color: #7BA32B;
+    font-size: 3rem;
+}
+.section-involucrate-desc {
+    font-size: 1.25rem;
+    color: #234F20;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card-body{
+    padding: 2rem 1rem 3rem 1rem;
+}
+.card-involucrate {
+    background: #fff;
+    border: none;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    transition: box-shadow 0.3s, background 0.3s;
+    border-radius: 0;
+    overflow: hidden;
+}
+.card-img-involucrate {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+.card-involucrate-title {
+    color: #234F20;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.card-involucrate-desc {
+    color: #234F20;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+.card-involucrate:hover, .card-involucrate:focus {
+    background: #D2E23B;
+}
+.card-involucrate:hover .card-involucrate-title,
+.card-involucrate:hover .card-involucrate-desc {
+    color: #234F20;
+}
+.card-involucrate:hover .card-img-involucrate {
+    filter: brightness(0.85) saturate(1.2);
+}
 @media (max-width: 991px) {
-    .carousel-img {
-        max-width: 300px;
+    .section-involucrate .card-involucrate {
+        margin-bottom: 1.5rem;
     }
-
-    .section-carousel {
-        padding: 30px 0;
+    .card-img-involucrate {
+        height: 180px;
     }
-
-    .section-carousel .carousel-control-prev,
-    .section-carousel .carousel-control-next {
-        left: 0;
-        right: 0;
-        width: 2.5rem;
-        height: 2.5rem;
+    .section-involucrate-title {
+        font-size: 2rem;
     }
 }
 
+.section-programas-title {
+    color: #234F20;
+    font-size: 2.5rem;
+}
+.section-programas-desc {
+    color: #234F20;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+.programa-card {
+    background: #fff;
+    border: none;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    transition: box-shadow 0.3s, background 0.3s, transform 0.3s;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.5rem;
+}
+.programa-icon {
+    font-size: 2.5rem;
+    color: #7BA32B;
+    margin-bottom: 1.5rem;
+}
+.programa-card h4 {
+    color: #234F20;
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+.programa-card p {
+    color: #234F20;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.btn-programas {
+    background-color: #D2E23B;
+    color: #234F20;
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.75rem 2.5rem;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: none;
+}
+.btn-programas:hover, .btn-programas:focus {
+    background-color: #234F20;
+    color: #fff;
+}
+.programas-extra-content {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    color: #234F20;
+}
+.programas-extra-content h5 {
+    color: #234F20;
+    font-size: 1.2rem;
+}
+.programas-extra-content ul li {
+    margin-bottom: 0.7rem;
+    font-size: 1.05rem;
+}
+.programas-extra-content i {
+    color: #7BA32B;
+}
+@media (max-width: 991px) {
+    .section-programas-title {
+        font-size: 2rem;
+    }
+    .programa-card {
+        min-height: 220px;
+        padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+    }
+}
+
+/* Sección 5 */
+.section-distinctive-title {
+    color: #234F20;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.distinctive-accordion .accordion-item {
+    border: none;
+    background: #fff;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+}
+.distinctive-accordion .accordion-header {
+    font-family: 'Montserrat', sans-serif;
+}
+.distinctive-accordion .accordion-button {
+    background: #fff;
+    color: #234F20;
+    font-size: 1.25rem;
+    font-weight: 600;
+    box-shadow: none;
+    border-radius: 0.25rem;
+    transition: background 0.3s, color 0.3s;
+}
+.distinctive-accordion .accordion-button:not(.collapsed) {
+    background: #D2E23B;
+    color: #234F20;
+}
+.distinctive-accordion .accordion-body {
+    color: #234F20;
+    font-size: 1.1rem;
+    background: #faf8ef;
+    border-radius: 0.25rem;
+}
+.distinctive-img {
+    max-width: 100%;
+    object-fit: cover;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    border-radius: 0.5rem;
+}
+@media (max-width: 991px) {
+    .section-distinctive-title {
+        font-size: 2rem;
+    }
+    .distinctive-img {
+        height: 180px;
+    }
+    .distinctive-accordion .accordion-button {
+        font-size: 1rem;
+    }
+}
