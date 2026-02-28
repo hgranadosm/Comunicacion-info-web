@@ -1,0 +1,204 @@
+@media (max-width: 767px) {
+    .titulo {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+    .titulo-italic {
+        font-size: 2rem;
+    }
+    h1{
+      padding: 20px;
+    }
+}
+@media (max-width: 991px) {
+    .section-cefi {
+        text-align: center;
+    }
+    .section-cefi .titulo {
+        font-size: 2.2rem;
+        line-height: 1.1;
+    }
+    .section-cefi .titulo-italic {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-cefi {
+        text-align: center;
+    }
+    .section-cefi .titulo {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+    .section-cefi .titulo-italic {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 767px) {
+    html, body {
+        overflow-x: hidden !important;
+        width: 100vw;
+        max-width: 100vw;
+    }
+
+}
+@media (max-width: 1029px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none !important;
+    }
+}
+@media (min-width: 998px) and (max-width: 1300px) {
+    .section-involucrate .row.justify-content-center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .section-involucrate .col-md-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        max-width: 350px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .section-involucrate .card-involucrate {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 420px;
+    }
+    .card-img-involucrate {
+        height: 220px;
+    }
+}
+@media (max-width: 991px) {
+    .section-involucrate .row.justify-content-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-involucrate .col-md-4 {
+        max-width: 90vw;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card-img-involucrate {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .section-involucrate .col-md-4 {
+        max-width: 100vw;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .card-img-involucrate {
+        height: 160px;
+    }
+}
+
+@media (min-width: 992px) {
+    .section-involucrate .row.justify-content-center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .section-involucrate .col-md-4 {
+        max-width: 350px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .card-img-involucrate {
+        height: 220px;
+    }
+}
+@media (min-width: 760px) and (max-width: 1000px) {
+    .section-programas .programa-card {
+        min-width: 260px;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section-programas .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .section-programas .row.g-4 > [class*='col-'] {
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 991px) {
+    .section-involucrate .card-involucrate {
+        margin-bottom: 1.5rem;
+    }
+    .card-img-involucrate {
+        height: 400px;
+    }
+    .section-involucrate-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-programas-title {
+        font-size: 2rem;
+    }
+    .programa-card {
+        min-height: 220px;
+        padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-distinctive-title {
+        font-size: 2rem;
+    }
+    .distinctive-img {
+        height: 400px;
+    }
+    .distinctive-accordion .accordion-button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .cefi-footer .footer-btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .cefi-footer .footer-social-icon {
+        font-size: 1.5rem;
+    }
+    .btn-programas {
+      margin-bottom: 30px;
+    } 
+}
+
+@media (max-width: 991.98px) {
+
+  .navbar-collapse {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+}

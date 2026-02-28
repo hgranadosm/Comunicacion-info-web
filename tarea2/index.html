@@ -15,21 +15,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/reglas.css" />
   </head>
   <body>
     <header class="banner-section espacio position-relative">
       <div class="banner-overlay"></div>
       <nav
         class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0 start-0"
-        style="z-index: 2"
       >
         <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="#">
             <img
               src="img/logoCefi.svg"
               alt="Logo"
-              width="60"
-              height="60"
+              width="80"
+              height="80"
               class="me-2"
             />
             <span></span>
@@ -77,18 +77,27 @@
           <div class="col-12 text-center mt-5 pt-5">
             <h1 class="text-white titulo">
               IMPULSAMOS TU TALENTO,<br>
-              <span class="titulo-italic">CONSTRUIMOS TU FUTUR</span>
+              <span class="titulo-italic">CONSTRUIMOS TU FUTURO</span>
             </h1>
           </div>
         </div>
       </div>
       <div class="banner-bg"></div>
+        <div class="banner-motivation-box position-absolute w-100" style="left:0; bottom:0; z-index:3;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7 col-md-10 col-12">
+               
+              </div>
+            </div>
+          </div>
+        </div>
     </header>
 
     <section class="section-cefi">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
+          <div class="col-lg-8 text-center pb-5 pt-5">
             <p>
               En CEFI, impulsamos el desarrollo profesional y personal de
               estudiantes, docentes y empresas mediante programas de formación,
@@ -96,9 +105,9 @@
               herramientas y oportunidades para construir un futuro exitoso y
               sostenible.
             </p>
-            <a href="https://www.ceficr.com/" class="btn btn-cefi"
-              >Conoce más &rarr;</a
-            >
+              <a href="https://www.ceficr.com/" class="btn btn-programas">
+              <span class="me-2">Conócenos</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -108,14 +117,14 @@
     <section class="section-programas py-5 bg-light">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-12 text-center">
+          <div class="col-12 text-center pt-5">
             <h2 class="fw-bold section-programas-title"> Nuestros Programas</h2>
             <p class="section-programas-desc">
               En CEFI Costa Rica te ofrecemos formación actualizada y práctica para que desarrolles habilidades reales y accedas a mejores oportunidades laborales.
             </p>
           </div>
         </div>
-        <div class="row justify-content-center g-4">
+        <div class="row justify-content-center g-4 pb-3">
           <div class="col-md-3">
             <div class="programa-card text-center h-100 p-4">
               <div class="programa-icon mb-3"><i class="fa-solid fa-briefcase"></i></div>
@@ -146,7 +155,7 @@
           </div>
         </div>
         <div class="row mt-5">
-          <div class="col-12 text-center">
+          <div class="col-12 text-center pb-5">
             <a href="https://www.ceficr.com/" class="btn btn-programas">
               <span class="me-2">Ver Oferta Académica</span> <i class="fa-solid fa-arrow-right"></i>
             </a>
@@ -155,7 +164,7 @@
       </div>
     </section>
 
-    <section class="section-carousel bg-light py-5">
+    <section class="section-carousel ">
       <div class="container">
         <div
           id="cefiCarousel"
@@ -166,7 +175,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="col-lg-6">
                   <h2 class="display-4 fw-bold" style="color: #234f20">
                     Formación Integral
                   </h2>
@@ -175,9 +184,9 @@
                     potenciar las habilidades de estudiantes y profesionales,
                     adaptándonos a las necesidades del mercado actual.
                   </p>
-                  <a href="https://www.ceficr.com/" class="btn btn-cefi mt-3"
-                    >Conoce más &rarr;</a
-                  >
+                    <a href="https://www.ceficr.com/" class="btn btn-programas">
+              <span class="me-2">Explorar</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
                 </div>
                 <div class="col-lg-6 text-center">
                   <img
@@ -190,7 +199,7 @@
             </div>
             <div class="carousel-item">
               <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="col-lg-6">
                   <h2 class="display-4 fw-bold" style="color: #234f20">
                     Asesoría Personalizada
                   </h2>
@@ -199,9 +208,9 @@
                     para el desarrollo de proyectos, emprendimientos y
                     crecimiento profesional.
                   </p>
-                  <a href="https://www.ceficr.com/" class="btn btn-cefi mt-3"
-                    >Conoce más &rarr;</a
-                  >
+                     <a href="https://www.ceficr.com/" class="btn btn-programas">
+              <span class="me-2">Explorar</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
                 </div>
                 <div class="col-lg-6 text-center">
                   <img
@@ -214,7 +223,7 @@
             </div>
             <div class="carousel-item">
               <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="col-lg-6">
                   <h2 class="display-4 fw-bold" style="color: #234f20">
                     Vinculación Empresarial
                   </h2>
@@ -223,9 +232,9 @@
                     prácticas, facilitando la inserción en el mundo profesional
                     y el crecimiento de las organizaciones.
                   </p>
-                  <a href="https://www.ceficr.com/" class="btn btn-cefi mt-3"
-                    >Conoce más &rarr;</a
-                  >
+                   <a href="https://www.ceficr.com/" class="btn btn-programas">
+              <span class="me-2">Explorar</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
                 </div>
                 <div class="col-lg-6 text-center">
                   <img
@@ -259,7 +268,7 @@
       </div>
     </section>
 
-    <section class="section-involucrate py-5 bg-white">
+    <section class="section-involucrate ">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
@@ -317,13 +326,20 @@
             </div>
           </div>
         </div>
+          <div class="row">
+            <div class="col-12 text-center pt-5">
+               <a href="https://www.ceficr.com/" class="btn btn-programas">
+              <span class="me-2">Quiero ser parte</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            </div>
+          </div>
       </div>
     </section>
 
 
     <section>
       
-    <section class="section-distinctive py-5 bg-white">
+    <section class="section-distinctive bg-white">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-7 mb-4 mb-lg-0">
@@ -403,20 +419,15 @@
       
     <footer class="cefi-footer mt-5">
       <div class="container py-5">
-        <div class="row align-items-center">
-          <div class="col-md-4 mb-4 mb-md-0 text-md-start text-center">
+        <div class="row align-items-center pt-5 pb-5">
+          <div class="col-md-4 mb-4 mb-md-0 text-md-start text-left">
             <img src="img/logoCefi.svg" alt="Logo CEFI" width="80" class="mb-3" />
-            <h4 class="fw-bold mb-3">Contacto CEFI</h4>
             <ul class="footer-contact-list list-unstyled mb-3">
-              <li><span class="fw-bold">Teléfono:</span> (506) 2711-1010</li>
-              <li><span class="fw-bold">WhatsApp:</span> <a href="https://wa.link/22tc96" target="_blank">8992-9180</a></li>
-              <li><span class="fw-bold">Electrónico:</span> <a href="mailto:info@ceficr.com">info@ceficr.com</a></li>
+              <li><span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span> (506) 2711-1010</li>
+              <li><span class="footer-contact-icon"><i class="fa-brands fa-whatsapp"></i></span> <a href="https://wa.link/22tc96" target="_blank">8992-9180</a></li>
+              <li><span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span> <a href="mailto:info@ceficr.com">info@ceficr.com</a></li>
             </ul>
-            <div class="footer-social mb-3">
-              <a href="https://www.instagram.com/cefi_cr" target="_blank" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.tiktok.com/@cefi_cr" target="_blank" class="footer-social-icon"><i class="fab fa-tiktok"></i></a>
-              <a href="https://www.youtube.com/@ceficr" target="_blank" class="footer-social-icon"><i class="fab fa-youtube"></i></a>
-            </div>
+           
             <div class="footer-address">
               <span class="fw-bold">Dirección:</span><br />
               Guápiles, 50mts norte de la bomba EUSSE, en el Centro Educativo Valle Del Sol.
@@ -425,20 +436,26 @@
           <div class="col-md-4 mb-4 mb-md-0 text-center">
             <h5 class="fw-bold mb-3">Menú Rápido</h5>
             <ul class="footer-menu list-unstyled">
-              <li><a href="#inspiracion">Inspiración</a></li>
-              <li><a href="#magia">Magia</a></li>
-              <li><a href="#unete">Únete</a></li>
-              <li><a href="#unete">Voluntariado</a></li>
+              <li><a href="#inspiracion">Inicio</a></li>
+              <li><a href="#magia">Nosotros</a></li>
               <li><a href="#unete">Programas</a></li>
-              <li><a href="#encuentranos">Encuéntranos</a></li>
+              <li><a href="#unete">Involúcrate</a></li>
+              <li><a href="#unete">Comunidad</a></li>
+              <li><a href="#unete">Galería</a></li>
+              <li><a href="#encuentranos">Contacto</a></li>
             </ul>
           </div>
           <div class="col-md-4 text-md-end text-center">
-            <a href="https://wa.link/22tc96" target="_blank" class="footer-btn btn btn-cefi mb-3"><i class="fa-solid fa-heart me-2"></i> Contáctanos</a>
-            <div class="footer-privacy mt-3">
-              <a href="https://www.ceficr.com/" target="_blank">Política de Privacidad</a> |
-              <a href="https://www.ceficr.com/" target="_blank">Recursos CEFI</a>
-            </div>
+              <div class="footer-social mb-3">
+                <a href="https://www.instagram.com/cefi_cr" target="_blank" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@cefi_cr" target="_blank" class="footer-social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@ceficr" target="_blank" class="footer-social-icon"><i class="fab fa-youtube"></i></a>
+              </div>
+              <a href="https://wa.link/22tc96" target="_blank" class="footer-btn btn btn-cefi mb-3"><i class="fa-solid fa-heart me-2"></i> Contáctanos</a>
+              <div class="footer-privacy mt-3">
+                <a href="https://www.ceficr.com/" target="_blank">Política de Privacidad</a> |
+                <a href="https://www.ceficr.com/" target="_blank">Recursos CEFI</a>
+              </div>
           </div>
         </div>
         <hr class="footer-divider my-4" />
