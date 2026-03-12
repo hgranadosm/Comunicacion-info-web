@@ -29,18 +29,18 @@ body {
 .portada::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+
 }
 
 .portada .banner {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }
 
 .contenido-portada {
@@ -77,3 +77,168 @@ body {
   top: 10%;
   transform: translateY(-50%);
 }
+
+.comida-section {
+  padding: 60px 0;
+  background-color: #f9f7f4;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-comida {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: 500px;
+  max-width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.card-comida:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-imagen {
+
+  width: 100%;
+  height: 300px;
+  object-fit: cover;  
+  display: block;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-nombre {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.card-precio {
+  font-family: 'Onest', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #d4a574;
+}
+
+.card-descripcion {
+  font-family: 'Onest', serif;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 16px 0 16px 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+.menu-section {
+  padding: 60px 0;
+  background-color: #f9f7f4;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-menu {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background: url('../img/arancini.jpg') center/cover no-repeat;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-menu:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.card-menu:hover .card-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+  position: relative;
+  z-index: 2;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.card-menu:hover .card-title {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-section {
+    padding: 40px 0;
+  }
+  
+  .card-title {
+    font-size: 1.3rem;
+  }
+}
+
+
+
