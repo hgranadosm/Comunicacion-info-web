@@ -71,16 +71,47 @@ body {
 
 .logo-portada {
   position: absolute;
-  width: 150px;
+  width: 190px;
   z-index: 2;
   right: 5%;
-  top: 10%;
+  top: 15%;
   transform: translateY(-50%);
 }
 
+
+.menu-categorias {
+  background: #ffffff;
+  padding: 30px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-categorias {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.nav-categorias a {
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-categorias a:hover {
+  color: #d4a574;
+}
+
+
 .comida-section {
   padding: 10px 10px;
-  background-color: #f9f7f4;
+  background-color: #ffffff;
 }
 
 .section-title {
@@ -100,9 +131,8 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  height: 500px;
   max-width: 350px;
-  height: 500px;
+
   display: flex;
   flex-direction: column;
 }
@@ -115,7 +145,6 @@ body {
 }
 
 .card-imagen {
-
   width: 100%;
   height: 300px;
   object-fit: cover;  
@@ -143,6 +172,7 @@ body {
   font-size: 1.4rem;
   font-weight: 700;
   color: #d4a574;
+  margin-top: auto;
 }
 
 .card-descripcion {
@@ -151,18 +181,6 @@ body {
   color: #666;
   line-height: 1.6;
   margin: 16px 0 16px 0;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .section-title {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .section-title {
-    font-size: 1.8rem;
-  }
 }
 
 .menu-section {
@@ -224,6 +242,128 @@ body {
   transform: scale(1.1);
 }
 
+.nota-calidad {
+  background-color: #f9f7f4;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.nota-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.nota-texto {
+  font-family: 'Onest', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 750px;
+  margin: 0 auto 18px auto;
+}
+
+.nota-legal {
+  margin-bottom: 45px;
+  font-family: 'Onest', sans-serif;
+  font-size: 1rem;
+  color: #888;
+  text-align: center;
+}
+
+.footer {
+  background-color: #111;
+  color: #eee;
+  padding: 60px 20px 30px;
+}
+
+.footer-contenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.footer-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-texto {
+  font-family: 'Onest', sans-serif;
+  font-size: 0.95rem;
+  color: #bbb;
+  margin: 4px 0;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-family: 'Onest', sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.05);
+}
+
+.redes {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.redes a {
+  color: #eee;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.redes a:hover {
+  color: #d4a574;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width: 768px) {
   .card-title {
     font-size: 1.5rem;
@@ -238,6 +378,26 @@ body {
   .card-title {
     font-size: 1.3rem;
   }
+  .comida-section{
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .titulo-portada {
+    font-size: 5rem;
+  } 
+
+  .subtitulo-portada {
+    font-size: 1.2rem;
+  }
+
+  .logo-portada {
+    width: 150px;
+    top: 25%;
+  }
+
 }
 
 
