@@ -5,7 +5,8 @@
 }
 
 .art-page-header .banner-overlay {
-  background: linear-gradient(180deg, rgba(11, 25, 10, 0.72) 0%, rgba(35, 79, 32, 0.58) 100%);
+  background-color: rgba(0, 0, 0, 0.5);
+
 }
 
 .art-header-content {
