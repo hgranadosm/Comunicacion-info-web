@@ -267,29 +267,142 @@
 }
 
 .prog-valor-section {
-  background: linear-gradient(135deg, #234F20 0%, #2f662a 100%);
+  position: relative;
+  background: #f8f9fa;
+  overflow: hidden;
+}
+
+.prog-valor-section::before,
+.prog-valor-section::after {
+  content: "";
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  animation: valorGlow 9s ease-in-out infinite;
+}
+
+.prog-valor-section::before {
+  top: -130px;
+  left: -120px;
+}
+
+.prog-valor-section::after {
+  right: -130px;
+  bottom: -130px;
+  animation-delay: 1.4s;
+}
+
+.prog-valor-section .container {
+  position: relative;
+  z-index: 1;
 }
 
 .valor-item {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(210, 226, 59, 0.25);
+  background-color: #f9fbfa;
+  border: none;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
   text-align: center;
+  box-shadow: 0 14px 32px rgba(35, 79, 32, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  transform: translateY(22px);
+  opacity: 0;
+  animation: valorCardIn 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.prog-valor-section .col-md-6:nth-child(1) .valor-item {
+  animation-delay: 0.06s;
+}
+
+.prog-valor-section .col-md-6:nth-child(2) .valor-item {
+  animation-delay: 0.14s;
+}
+
+.prog-valor-section .col-md-6:nth-child(3) .valor-item {
+  animation-delay: 0.22s;
+}
+
+.prog-valor-section .col-md-6:nth-child(4) .valor-item {
+  animation-delay: 0.3s;
+}
+
+.prog-valor-section .col-md-6:nth-child(5) .valor-item {
+  animation-delay: 0.38s;
+}
+
+.valor-item:hover,
+.valor-item:focus-within {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 40px rgba(35, 79, 32, 0.14);
+  border-color: #c9ddbf;
 }
 
 .valor-icon {
-  color: #D2E23B;
-  font-size: 2rem;
+  color: #7BA32B;
+  font-size: 2.2rem;
+  transition: transform 0.35s ease, color 0.35s ease;
+}
+
+.valor-item:hover .valor-icon,
+.valor-item:focus-within .valor-icon {
+  transform: translateY(-3px) scale(1.08);
+  color: #6a9224;
 }
 
 .valor-item h3 {
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 700;
+  color: #234F20;
+  font-size: 1.18rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0;
+  max-width: 15ch;
 }
 
 .valor-item p {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.96rem;
+  color: #2f5b2f;
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+@keyframes valorCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes valorGlow {
+  0%,
+  100% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.1) translateY(12px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .valor-item,
+  .prog-valor-section::before,
+  .prog-valor-section::after {
+    animation: none;
+  }
+
+  .valor-item {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .blog-card {
