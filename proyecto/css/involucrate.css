@@ -1,0 +1,115 @@
+.inv-hero {
+  border-bottom: 1px solid #e8eee7;
+}
+
+.inv-title {
+  color: #234F20;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 800;
+}
+
+.inv-subtitle {
+  color: #234F20;
+  font-size: 1.08rem;
+}
+
+.inv-section-title {
+  color: #234F20;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 800;
+}
+
+.inv-card {
+  background: #ffffff;
+  border: 1px solid #e8eee7;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 16px rgba(35, 79, 32, 0.08);
+}
+
+.inv-icon {
+  color: #7BA32B;
+  font-size: 2rem;
+}
+
+.inv-card h3,
+.inv-card p {
+  color: #234F20;
+}
+
+.inv-list {
+  color: #234F20;
+  padding-left: 1.2rem;
+}
+
+.inv-list li {
+  margin-bottom: 0.55rem;
+}
+
+.inv-list li:last-child {
+  margin-bottom: 0;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border: 1px solid #e8eee7;
+  box-shadow: 0 4px 18px rgba(35, 79, 32, 0.08);
+}
+
+.testimonial-photo {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial-role {
+  color: #7BA32B;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.testimonial-company {
+  color: #234F20;
+  font-size: 0.9rem;
+}
+
+.testimonial-text {
+  color: #234F20;
+  font-size: 0.97rem;
+}
+
+.testimonial-stars {
+  color: #D2E23B;
+  font-size: 1rem;
+}
+
+.benefit-card {
+  background: #ffffff;
+  border: 1px solid #e8eee7;
+  box-shadow: 0 4px 16px rgba(35, 79, 32, 0.08);
+}
+
+.benefit-icon {
+  color: #7BA32B;
+  font-size: 1.9rem;
+}
+
+.benefit-card h3,
+.benefit-card p {
+  color: #234F20;
+}
+
+.inv-cta {
+  background: #234F20;
+}
+
+.inv-cta-text {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inv-cta-btn {
+  min-width: 180px;
+}
