@@ -38,12 +38,17 @@
 
 .prog-category-strong .prog-category-title,
 .prog-category-strong .prog-category-text,
-.prog-category-strong .prog-category-kicker {
+.prog-category-strong .prog-category-accent{
   color: #ffffff;
 }
 
 .prog-category-accent {
-    background-color: #f8f9fa;
+    background-color: #234F20;
+}
+
+.prog-category-accent .prog-category-title,
+.prog-category-accent .prog-category-text {
+  color: #ffffff;
 }
 
 .prog-category-kicker {
