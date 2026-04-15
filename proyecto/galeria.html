@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería Cefi</title>
+    <link rel="icon" href="img/logoCefi.svg">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/reglas.css" />
+    <link rel="stylesheet" href="css/galeria.css" />
+  </head>
+  <body>
+    <header class="banner-section espacio position-relative">
+      <div class="banner-overlay"></div>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0 start-0"
+      >
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="img/logoCefi.svg"
+              alt="Logo"
+              width="80"
+              height="80"
+              class="me-2"
+            />
+            <span></span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#inspiracion">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#magia">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#unete">Programas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#unete">Involúcrate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#unete">Comunidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#unete">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#unete">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#encuentranos">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container position-relative" style="z-index: 2">
+        <div class="row">
+          <div class="col-12 text-center mt-5 pt-5">
+            <h1 class="text-white titulo">
+              IMPULSAMOS TU TALENTO,<br>
+              <span class="titulo-italic">CONSTRUIMOS TU FUTURO</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="banner-bg"></div>
+        <div class="banner-motivation-box position-absolute w-100" style="left:0; bottom:0; z-index:3;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7 col-md-10 col-12">
+               
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <main>
+
+      <section class="gal-hero py-5 bg-white">
+        <div class="container py-4 text-center">
+          <h1 class="gal-title mb-3">Galería Visual CEFI</h1>
+          <p class="gal-subtitle mb-0">Conoce nuestros espacios, instalaciones y los momentos que hacen grande a nuestra comunidad.</p>
+        </div>
+      </section>
+
+      <section class="py-5 bg-light" id="galeria" aria-labelledby="galeria-title">
+        <div class="container py-3">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <h2 id="galeria-title" class="gal-section-title mb-3">Nuestros Momentos</h2>
+              <div class="gal-filters d-flex flex-wrap justify-content-center gap-2 mb-4" role="group" aria-label="Filtros de galeria">
+                <button class="gal-filter-btn active" data-filter="all">Todas</button>
+                <button class="gal-filter-btn" data-filter="aulas">Aulas y laboratorios</button>
+                <button class="gal-filter-btn" data-filter="eventos">Eventos academicos</button>
+                <button class="gal-filter-btn" data-filter="actividades">Actividades estudiantiles</button>
+                <button class="gal-filter-btn" data-filter="graduacion">Graduacion</button>
+                <button class="gal-filter-btn" data-filter="talleres">Talleres y charlas</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-3" id="galeria-grid">
+
+            <div class="col-6 col-md-4 col-lg-3 gal-item" data-category="aulas">
+              <div class="gal-card" data-src="img/2.1.jpg" data-desc="Laboratorio de tecnologia equipado con herramientas modernas para el aprendizaje practico." data-index="0" role="button" tabindex="0" aria-label="Abrir imagen: Laboratorio de tecnologia">
+                <img src="img/2.1.jpg" alt="Laboratorio de tecnologia" class="gal-img" />
+                <div class="gal-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span class="gal-cat-label">Aulas y laboratorios</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 gal-item" data-category="eventos">
+              <div class="gal-card" data-src="img/2.2.jpg" data-desc="Evento academico con participacion activa de estudiantes y docentes de CEFI." data-index="1" role="button" tabindex="0" aria-label="Abrir imagen: Evento academico">
+                <img src="img/2.2.jpg" alt="Evento academico CEFI" class="gal-img" />
+                <div class="gal-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span class="gal-cat-label">Eventos academicos</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 gal-item" data-category="actividades">
+              <div class="gal-card" data-src="img/2.3.jpg" data-desc="Actividad estudiantil que fortalece el trabajo en equipo y el sentido de comunidad." data-index="2" role="button" tabindex="0" aria-label="Abrir imagen: Actividad estudiantil">
+                <img src="img/2.3.jpg" alt="Actividad estudiantil" class="gal-img" />
+                <div class="gal-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span class="gal-cat-label">Actividades estudiantiles</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 gal-item" data-category="graduacion">
+              <div class="gal-card" data-src="img/3.jpg" data-desc="Ceremonia de graduacion donde celebramos el esfuerzo y logros de nuestros estudiantes." data-index="3" role="button" tabindex="0" aria-label="Abrir imagen: Graduacion">
+                <img src="img/3.jpg" alt="Graduacion CEFI" class="gal-img" />
+                <div class="gal-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span class="gal-cat-label">Graduacion</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 gal-item" data-category="talleres">
+              <div class="gal-card" data-src="img/4.jpg" data-desc="Taller practico donde los estudiantes desarrollan habilidades tecnicas y creativas." data-index="4" role="button" tabindex="0" aria-label="Abrir imagen: Taller practico">
+                <img src="img/4.jpg" alt="Taller practico" class="gal-img" />
+                <div class="gal-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span class="gal-cat-label">Talleres y charlas</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 gal-item" data-category="aulas">
+              <div class="gal-card" data-src="img/5.jpg" data-desc="Aula moderna con ambientes de aprendizaje dinamicos y colaborativos." data-index="5" role="button" tabindex="0" aria-label="Abrir imagen: Aula moderna">
+                <img src="img/5.jpg" alt="Aula moderna CEFI" class="gal-img" />
+                <div class="gal-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span class="gal-cat-label">Aulas y laboratorios</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 gal-item" data-category="actividades">
+              <div class="gal-card" data-src="img/6.jpg" data-desc="Evento deportivo y cultural que une a estudiantes, docentes y familias en un ambiente festivo." data-index="6" role="button" tabindex="0" aria-label="Abrir imagen: Evento deportivo">
+                <img src="img/6.jpg" alt="Evento deportivo y cultural" class="gal-img" />
+                <div class="gal-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span class="gal-cat-label">Actividades estudiantiles</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 gal-item" data-category="eventos">
+              <div class="gal-card" data-src="img/banner.jpg" data-desc="Semana academica con charlas, expositores y actividades que amplian la vision de los estudiantes." data-index="7" role="button" tabindex="0" aria-label="Abrir imagen: Semana academica">
+                <img src="img/banner.jpg" alt="Semana academica CEFI" class="gal-img" />
+                <div class="gal-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span class="gal-cat-label">Eventos academicos</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 gal-item" data-category="talleres">
+              <div class="gal-card" data-src="img/2.1.jpg" data-desc="Charla motivacional con ponentes externos que comparten experiencias y conocimiento con la comunidad." data-index="8" role="button" tabindex="0" aria-label="Abrir imagen: Charla motivacional">
+                <img src="img/2.1.jpg" alt="Charla motivacional" class="gal-img" />
+                <div class="gal-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span class="gal-cat-label">Talleres y charlas</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 gal-item" data-category="graduacion">
+              <div class="gal-card" data-src="img/2.2.jpg" data-desc="Graduacion especial donde cada estudiante recibe el reconocimiento de su esfuerzo y dedicacion." data-index="9" role="button" tabindex="0" aria-label="Abrir imagen: Ceremonia de graduacion">
+                <img src="img/2.2.jpg" alt="Ceremonia de graduacion" class="gal-img" />
+                <div class="gal-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span class="gal-cat-label">Graduacion</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 gal-item" data-category="aulas">
+              <div class="gal-card" data-src="img/2.3.jpg" data-desc="Espacio de aprendizaje colaborativo donde los equipos trabajan en proyectos reales." data-index="10" role="button" tabindex="0" aria-label="Abrir imagen: Espacio colaborativo">
+                <img src="img/2.3.jpg" alt="Espacio colaborativo" class="gal-img" />
+                <div class="gal-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span class="gal-cat-label">Aulas y laboratorios</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 gal-item" data-category="actividades">
+              <div class="gal-card" data-src="img/3.jpg" data-desc="Club estudiantil activo que fomenta el liderazgo, la creatividad y el trabajo en equipo." data-index="11" role="button" tabindex="0" aria-label="Abrir imagen: Club estudiantil">
+                <img src="img/3.jpg" alt="Club estudiantil" class="gal-img" />
+                <div class="gal-overlay">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span class="gal-cat-label">Actividades estudiantiles</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row mt-3" id="gal-no-results" style="display:none !important;">
+            <div class="col-12 text-center py-5">
+              <i class="fa-solid fa-images gal-empty-icon mb-3"></i>
+              <p class="gal-empty-text">No hay fotos en esta categoria aun.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="modal fade" id="galModal" tabindex="-1" aria-labelledby="galModalLabel" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content gal-modal-content">
+            <div class="modal-body p-0 position-relative">
+              <button type="button" class="gal-modal-close" data-bs-dismiss="modal" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+              <button type="button" class="gal-modal-nav gal-modal-prev" id="galPrev" aria-label="Imagen anterior"><i class="fa-solid fa-chevron-left"></i></button>
+              <img src="" alt="" id="galModalImg" class="gal-modal-img" />
+              <button type="button" class="gal-modal-nav gal-modal-next" id="galNext" aria-label="Siguiente imagen"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="gal-modal-footer">
+                <p class="mb-0" id="galModalDesc"></p>
+                <span class="gal-modal-counter" id="galModalCounter"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="py-5 bg-white" id="instalaciones" aria-labelledby="instal-title">
+        <div class="container py-3">
+          <div class="row mb-5 text-center">
+            <div class="col-12">
+              <h2 id="instal-title" class="gal-section-title mb-3">Nuestras Instalaciones</h2>
+              <p class="gal-section-text mx-auto">CEFI cuenta con instalaciones modernas y funcionales, disenadas para crear un ambiente de aprendizaje optimo. Cada espacio ha sido pensado para facilitar la formacion tecnica, el trabajo colaborativo y el desarrollo integral de los estudiantes.</p>
+            </div>
+          </div>
+          <div class="row g-4 mb-5">
+            <div class="col-md-6 col-lg-4">
+              <article class="instal-service-card h-100 p-4">
+                <div class="instal-icon-wrap mb-3"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h3 class="h5 mb-2">Aulas equipadas</h3>
+                <p class="mb-0">Salones amplios con proyeccion, iluminacion natural y mobiliario ergonomico que favorecen la concentracion y el aprendizaje activo.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="instal-service-card h-100 p-4">
+                <div class="instal-icon-wrap mb-3"><i class="fa-solid fa-computer"></i></div>
+                <h3 class="h5 mb-2">Laboratorio de computo</h3>
+                <p class="mb-0">Laboratorio con equipos actualizados, acceso a internet de alta velocidad y software especializado para formacion tecnica y digital.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="instal-service-card h-100 p-4">
+                <div class="instal-icon-wrap mb-3"><i class="fa-solid fa-people-roof"></i></div>
+                <h3 class="h5 mb-2">Auditorio y sala de eventos</h3>
+                <p class="mb-0">Espacio comunitario para conferencias, graduaciones, talleres y actividades que reunen a estudiantes, docentes y familias.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="instal-service-card h-100 p-4">
+                <div class="instal-icon-wrap mb-3"><i class="fa-solid fa-book-open"></i></div>
+                <h3 class="h5 mb-2">Biblioteca y sala de estudio</h3>
+                <p class="mb-0">Area de consulta con material bibliografico actualizado, espacios de estudio individual y grupal para profundizar en cada programa.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="instal-service-card h-100 p-4">
+                <div class="instal-icon-wrap mb-3"><i class="fa-solid fa-futbol"></i></div>
+                <h3 class="h5 mb-2">Area deportiva</h3>
+                <p class="mb-0">Cancha multiuso para entrenamientos, encuentros deportivos y actividades recreativas que promueven bienestar y trabajo en equipo.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="instal-service-card h-100 p-4">
+                <div class="instal-icon-wrap mb-3"><i class="fa-solid fa-wifi"></i></div>
+                <h3 class="h5 mb-2">Conectividad y tecnologia</h3>
+                <p class="mb-0">Infraestructura tecnologica con WiFi en todo el campus, plataformas digitales de aprendizaje y herramientas para la educacion hibrida.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="row gal-infra-banner align-items-center g-0 rounded overflow-hidden">
+            <div class="col-md-6">
+              <img src="img/banner.jpg" alt="Instalaciones CEFI" class="w-100 gal-infra-img" />
+            </div>
+            <div class="col-md-6 p-5 gal-infra-text-col">
+              <h3 class="gal-infra-title mb-3">Un entorno pensado para ti</h3>
+              <p class="mb-3">Cada rincono de CEFI ha sido disenado con un proposito: crear las condiciones ideales para que cada estudiante pueda aprender, crecer y desarrollarse con comodidad y motivacion.</p>
+              <p class="mb-0">Nuestras instalaciones reflejan el compromiso de CEFI con la calidad educativa y el bienestar de toda la comunidad.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+
+      
+    <footer class="cefi-footer mt-5">
+      <div class="container py-5">
+        <div class="row align-items-center pt-5 pb-5">
+          <div class="col-md-4 mb-4 mb-md-0 text-md-start text-center">
+            <img src="img/logoCefi.svg" alt="Logo CEFI" width="80" class="mb-3" />
+            <ul class="footer-contact-list list-unstyled mb-3">
+              <li><span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span> (506) 2711-1010</li>
+              <li><span class="footer-contact-icon"><i class="fa-brands fa-whatsapp"></i></span> <a href="https://wa.link/22tc96" target="_blank">8992-9180</a></li>
+              <li><span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span> <a href="mailto:info@ceficr.com">info@ceficr.com</a></li>
+            </ul>
+           
+            <div class="footer-address">
+              <span class="fw-bold">Dirección:</span><br />
+              Guápiles, 50mts norte de la bomba EUSSE, en el Centro Educativo Valle Del Sol.
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0 text-center">
+            <h5 class="fw-bold mb-3">Menú Rápido</h5>
+            <ul class="footer-menu list-unstyled">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="programas.html">Programas</a></li>
+              <li><a href="involucrate.html">Involucrate</a></li>
+              <li><a href="comunidad.html">Comunidad</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-md-end text-center">
+              <div class="footer-social mb-3">
+                <a href="https://www.instagram.com/cefi_cr" target="_blank" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@cefi_cr" target="_blank" class="footer-social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@ceficr" target="_blank" class="footer-social-icon"><i class="fab fa-youtube"></i></a>
+              </div>
+              <a href="https://wa.link/22tc96" target="_blank" class="footer-btn btn btn-cefi mb-3"><i class="fa-solid fa-heart me-2"></i> Contáctanos</a>
+              <div class="footer-privacy mt-3">
+                <a href="https://www.ceficr.com/" target="_blank">Política de Privacidad</a> |
+                <a href="https://www.ceficr.com/" target="_blank">Recursos CEFI</a>
+              </div>
+          </div>
+        </div>
+        <hr class="footer-divider my-4" />
+        <div class="row">
+          <div class="col-12 text-center">
+            <small class="footer-copyright">© Copyright 2026 CEFI Costa Rica. Todos los derechos reservados.</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      (function () {
+        var allItems = Array.from(document.querySelectorAll('.gal-item'));
+        var filterBtns = document.querySelectorAll('.gal-filter-btn');
+        var noResults = document.getElementById('gal-no-results');
+
+        filterBtns.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            filterBtns.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            var filter = btn.getAttribute('data-filter');
+            var visible = 0;
+            allItems.forEach(function (item) {
+              if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                item.style.display = '';
+                visible++;
+              } else {
+                item.style.display = 'none';
+              }
+            });
+            noResults.style.display = visible === 0 ? 'block' : 'none';
+          });
+        });
+
+        var visibleItems = function () {
+          return allItems.filter(function (i) { return i.style.display !== 'none'; });
+        };
+
+        var modalEl = document.getElementById('galModal');
+        var modalImg = document.getElementById('galModalImg');
+        var modalDesc = document.getElementById('galModalDesc');
+        var modalCounter = document.getElementById('galModalCounter');
+        var bsModal = new bootstrap.Modal(modalEl);
+        var currentIndex = 0;
+
+        function openModal(index) {
+          var vis = visibleItems();
+          if (!vis[index]) return;
+          currentIndex = index;
+          var card = vis[index].querySelector('.gal-card');
+          modalImg.src = card.getAttribute('data-src');
+          modalImg.alt = card.querySelector('.gal-img').getAttribute('alt');
+          modalDesc.textContent = card.getAttribute('data-desc');
+          modalCounter.textContent = (index + 1) + ' / ' + vis.length;
+          bsModal.show();
+        }
+
+        document.querySelectorAll('.gal-card').forEach(function (card, i) {
+          card.addEventListener('click', function () {
+            var vis = visibleItems();
+            var idx = vis.findIndex(function (item) { return item.contains(card); });
+            openModal(idx);
+          });
+          card.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') { card.click(); }
+          });
+        });
+
+        document.getElementById('galPrev').addEventListener('click', function () {
+          var vis = visibleItems();
+          openModal((currentIndex - 1 + vis.length) % vis.length);
+        });
+
+        document.getElementById('galNext').addEventListener('click', function () {
+          var vis = visibleItems();
+          openModal((currentIndex + 1) % vis.length);
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (!modalEl.classList.contains('show')) return;
+          if (e.key === 'ArrowLeft') document.getElementById('galPrev').click();
+          if (e.key === 'ArrowRight') document.getElementById('galNext').click();
+        });
+      })();
+    </script>
+</html>
