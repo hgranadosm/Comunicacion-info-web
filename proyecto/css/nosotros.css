@@ -129,7 +129,6 @@
   border: 1px solid #e2ede0;
   box-shadow: 0 10px 30px rgba(35, 79, 32, 0.09);
   padding: 1.1rem 1.3rem;
-  border-radius: 10px;
   overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
