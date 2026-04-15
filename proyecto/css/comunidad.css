@@ -24,68 +24,185 @@
   font-size: 1.02rem;
 }
 
-.community-pill {
-  background: #ffffff;
-  border: 1px solid #e8eee7;
-  box-shadow: 0 4px 16px rgba(35, 79, 32, 0.08);
+.com-spark-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 1.6rem;
+  margin-top: 0.8rem;
 }
 
-.community-pill h3,
-.community-pill p {
-  color: #234F20;
-}
-
-.community-pill-icon {
-  color: #7BA32B;
-  font-size: 2rem;
-}
-
-.event-card {
-  background: #ffffff;
-  border: 1px solid #e8eee7;
-  box-shadow: 0 4px 16px rgba(35, 79, 32, 0.08);
+.com-spark-item {
+  position: relative;
+  padding: 1rem 0.5rem 1rem 1.35rem;
   display: flex;
   flex-direction: column;
 }
 
-.event-card h3,
-.event-card p {
+.com-spark-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  bottom: 0.55rem;
+  width: 2px;
+  border-radius: 99px;
+  background: linear-gradient(180deg, #7BA32B 0%, #D2E23B 100%);
+  opacity: 0.92;
+}
+
+.com-spark-item h3 {
   color: #234F20;
+  font-size: 1.38rem;
+  font-weight: 800;
+  margin-bottom: 0.55rem;
 }
 
-.event-date {
-  color: #7BA32B;
-  font-weight: 700;
+.com-spark-item p {
+  color: #234F20;
+  font-size: 0.97rem;
+  line-height: 1.58;
+  margin: 0;
+}
+
+.event-promo-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #dfe9dc;
+  box-shadow: 0 10px 30px rgba(35, 79, 32, 0.09);
+  padding: 1.6rem 1.45rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.event-promo-card:hover {
+  transform: translateY(-5px);
+  border-color: #cdddca;
+  box-shadow: 0 16px 34px rgba(35, 79, 32, 0.14);
+}
+
+.event-promo-featured {
+  background: linear-gradient(180deg, #f9fcf8 0%, #f2f8f1 100%);
+  border-color: #c8ddc0;
+}
+
+
+.event-mini-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #234F20;
+  color: #D2E23B;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 0.95rem;
+  margin-bottom: 0.85rem;
 }
 
-.event-meta {
+.event-promo-title {
+  color: #234F20;
+  font-size: 1.62rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0.55rem;
+  max-width: 14ch;
+}
+
+.event-promo-text {
+  color: #234F20;
+  font-size: 1.03rem;
+  line-height: 1.58;
+  margin-bottom: 1rem;
+}
+
+.event-promo-list {
+  list-style: none;
+  margin: 0 0 1.3rem;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.event-promo-list li {
+  color: #234F20;
+  font-size: 0.96rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.event-promo-list i {
+  color: #7BA32B;
+  width: 16px;
+  text-align: center;
+}
+
+.event-promo-btn {
+  margin-top: auto;
+}
+
+.club-promo-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #dfe9dc;
+  box-shadow: 0 10px 30px rgba(35, 79, 32, 0.09);
+  padding: 1.6rem 1.45rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.club-promo-card:hover {
+  transform: translateY(-5px);
+  border-color: #cdddca;
+  box-shadow: 0 16px 34px rgba(35, 79, 32, 0.14);
+}
+
+
+.club-promo-title {
+  color: #234F20;
+  font-size: 1.34rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0.55rem;
+  max-width: 16ch;
+}
+
+.club-promo-text {
+  color: #234F20;
+  font-size: 0.98rem;
+  line-height: 1.56;
+  margin-bottom: 1rem;
+}
+
+.club-promo-list {
+  list-style: none;
+  margin: 0 0 1.15rem;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.club-promo-list li {
   color: #234F20;
   font-size: 0.93rem;
+  display: flex;
+  align-items: center;
+  gap: 0.48rem;
 }
 
-.club-card {
-  background: #ffffff;
-  border: 1px solid #e8eee7;
-  box-shadow: 0 4px 16px rgba(35, 79, 32, 0.08);
-  overflow: hidden;
-}
-
-.club-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.club-card h3,
-.club-card p {
-  color: #234F20;
-}
-
-.club-contact {
+.club-promo-list i {
   color: #7BA32B;
-  font-size: 0.92rem;
-  font-weight: 600;
+  width: 16px;
+  text-align: center;
+}
+
+.club-promo-btn {
+  margin-top: auto;
 }
 
 .com-testimonial {
@@ -99,25 +216,41 @@
   color: #234F20;
 }
 
-.loop-card-header {
-  display: flex;
-  align-items: center;
-  gap: 0.85rem;
-}
-
 .loop-avatar {
-  width: 54px;
-  height: 54px;
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   object-fit: cover;
+  display: block;
   flex-shrink: 0;
-  border: 2px solid #7BA32B;
+  border: 3px solid #7BA32B;
+}
+
+.com-quote {
+  color: #234F20;
+  font-size: 1.02rem;
+  line-height: 1.68;
+  font-style: italic;
+  max-width: 38ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.com-testimonial-name {
+  color: #234F20;
+  font-size: 1.22rem;
+  font-weight: 700;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: 0.01em;
 }
 
 .com-role {
   color: #7BA32B;
-  font-size: 0.92rem;
-  font-weight: 700;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .testimonial-loop {
@@ -137,8 +270,8 @@
 }
 
 .loop-card {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 440px;
+  max-width: 440px;
 }
 
 @keyframes comunidadScroll {
@@ -147,5 +280,36 @@
   }
   to {
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .com-spark-grid {
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+  }
+
+  .com-spark-item {
+    padding: 1.2rem 1rem 1.2rem 1rem;
+  }
+
+  .event-promo-title {
+    font-size: 1.45rem;
+    max-width: none;
+  }
+
+  .event-tag {
+    min-width: 90px;
+    font-size: 0.8rem;
+  }
+
+  .club-promo-title {
+    font-size: 1.25rem;
+    max-width: none;
+  }
+
+  .club-tag {
+    min-width: 84px;
+    font-size: 0.78rem;
   }
 }
