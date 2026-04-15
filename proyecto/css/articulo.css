@@ -1,3 +1,41 @@
+.art-page-header {
+  min-height: 48vh;
+  height: auto;
+  align-items: flex-start;
+}
+
+.art-page-header .banner-overlay {
+  background: linear-gradient(180deg, rgba(11, 25, 10, 0.72) 0%, rgba(35, 79, 32, 0.58) 100%);
+}
+
+.art-header-content {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.art-header-tag {
+  color: #d2e23b;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.art-header-title {
+  color: #ffffff;
+  font-size: clamp(1.9rem, 3.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.art-header-subtitle {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 720px;
+  margin-inline: auto;
+}
+
 .art-hero {
   border-bottom: 3px solid #d2e23b;
 }
