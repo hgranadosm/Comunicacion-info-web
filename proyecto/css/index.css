@@ -282,33 +282,78 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 .distinctive-accordion .accordion-item {
-    border: none;
-    background: #fff;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-    margin-bottom: 1rem;
-    border-radius: 0.25rem;
+    position: relative;
+    border: 1px solid #dce7d8;
+    border-radius: 12px;
+    margin-bottom: 0.9rem;
+    overflow: hidden;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbf7 100%);
+    box-shadow: 0 8px 18px rgba(35, 79, 32, 0.06);
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
 }
-.distinctive-accordion .accordion-header {
-    font-family: 'Montserrat', sans-serif;
+
+.distinctive-accordion .accordion-item::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 4px;
+    background: linear-gradient(180deg, #7ba32b 0%, #d2e23b 100%);
+    opacity: 0.45;
+    transition: opacity 0.3s ease, width 0.3s ease;
 }
+
+.distinctive-accordion .accordion-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 30px rgba(35, 79, 32, 0.12);
+    border-color: #c4d8bc;
+}
+
+.distinctive-accordion .accordion-item:hover::before {
+    opacity: 1;
+    width: 6px;
+}
+
 .distinctive-accordion .accordion-button {
-    background: #fff;
     color: #234F20;
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 800;
+    font-size: 1.05rem;
+    background: transparent;
     box-shadow: none;
-    border-radius: 0.25rem;
-    transition: background 0.3s, color 0.3s;
+    padding: 1.15rem 3.15rem 1.15rem 1.35rem;
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
+
+.distinctive-accordion .accordion-button::after {
+    width: 1.1rem;
+    height: 1.1rem;
+    background-size: 1.1rem;
+    transition: transform 0.28s ease;
+}
+
 .distinctive-accordion .accordion-button:not(.collapsed) {
-    background: #D2E23B;
-    color: #234F20;
+    background: linear-gradient(90deg, #d2e23b 0%, #c3dc36 100%);
+    color: #1e471b;
 }
+
+.distinctive-accordion .accordion-button:not(.collapsed)::after {
+    transform: rotate(-180deg) scale(1.05);
+}
+
 .distinctive-accordion .accordion-body {
     color: #234F20;
-    font-size: 1.1rem;
-    background: #faf8ef;
-    border-radius: 0.25rem;
+    background: linear-gradient(180deg, #fbfcfb 0%, #f5faf3 100%);
+    font-size: 1.02rem;
+    line-height: 1.65;
+    border-top: 1px solid #dce9d7;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .distinctive-accordion .accordion-item,
+    .distinctive-accordion .accordion-item::before,
+    .distinctive-accordion .accordion-button,
+    .distinctive-accordion .accordion-button::after {
+        transition: none;
+    }
 }
 .distinctive-img {
     max-width: 100%;
