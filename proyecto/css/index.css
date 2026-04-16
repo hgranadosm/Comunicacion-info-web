@@ -39,6 +39,7 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
+    pointer-events: none;
 }
 
 .section-cefi {
@@ -425,6 +426,19 @@ body {
 .menu-overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 991.98px) {
+    .navbar,
+    .navbar .container,
+    .navbar-collapse {
+        position: relative;
+        z-index: 1001;
+    }
+
+    .navbar-collapse {
+        pointer-events: auto;
+    }
 }
 
 .titulo {
