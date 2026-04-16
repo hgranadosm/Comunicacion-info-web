@@ -207,57 +207,42 @@
 }
 
 .instal-service-card {
-  background: #f8fbf7;
+  background: #ffffff;
   border: 1px solid #e2ede0;
   border-radius: 8px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(35, 79, 32, 0.09);
   transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
   animation: instalSlideUp 0.65s ease both;
 }
 
 .instal-service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 14px 34px rgba(35, 79, 32, 0.16);
-  border-color: rgba(35, 79, 32, 0.45);
-}
-
-.instal-service-card::before {
-  content: "";
-  position: absolute;
-  top: -40%;
-  left: -60%;
-  width: 70%;
-  height: 180%;
-  background: linear-gradient(120deg, rgba(210, 226, 59, 0.2), rgba(210, 226, 59, 0));
-  transform: rotate(16deg);
-  transition: left 0.55s ease;
-  pointer-events: none;
-}
-
-.instal-service-card:hover::before {
-  left: 105%;
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px rgba(35, 79, 32, 0.12);
+  border-color: rgba(123, 163, 43, 0.34);
 }
 
 .instal-icon-wrap {
   width: 56px;
   height: 56px;
-  background: #234F20;
+  background: linear-gradient(135deg, #234F20 0%, #2f6729 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition: all 0.3s ease;
 }
 
 .instal-icon-wrap i {
-  color: #D2E23B;
+  color: #ffffff;
   font-size: 1.4rem;
 }
 
 .instal-service-card:hover .instal-icon-wrap {
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 8px 18px rgba(35, 79, 32, 0.25);
+  background: linear-gradient(135deg, #7BA32B 0%, #5f8620 100%);
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 12px 24px rgba(35, 79, 32, 0.22);
 }
 
 .instal-service-card h3 {
@@ -321,7 +306,6 @@
 
 .instal-stat-pill {
   border: 1px solid rgba(35, 79, 32, 0.2);
-  background: linear-gradient(120deg, rgba(35, 79, 32, 0.06), rgba(210, 226, 59, 0.12));
   border-radius: 999px;
   padding: 0.85rem 1rem;
   display: flex;
@@ -355,8 +339,7 @@
   margin-top: 1rem;
   padding: 0.2rem 0.7rem;
   border-radius: 999px;
-  background: rgba(35, 79, 32, 0.1);
-  border: 1px solid rgba(35, 79, 32, 0.15);
+  background: #D2E23B;
   color: #234F20;
   font-weight: 700;
   font-size: 0.76rem;

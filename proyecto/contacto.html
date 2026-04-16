@@ -100,18 +100,12 @@
 
     <main>
 
-      <section class="con-hero py-5 bg-white">
-        <div class="container py-4 text-center">
-          <h1 class="con-title mb-3">Ponte en Contacto</h1>
-          <p class="con-subtitle mb-0">Estamos aqui para ayudarte. Escribenos, llamanos o visita nuestras instalaciones.</p>
-        </div>
-      </section>
-
       <section class="py-5 bg-light" id="info-contacto" aria-labelledby="info-contacto-title">
         <div class="container py-3">
           <div class="row mb-4">
             <div class="col-12 text-center">
-              <h2 id="info-contacto-title" class="con-section-title mb-3">¿Cómo llegarnos?</h2>
+              <h2 id="info-contacto-title" class="con-section-title mb-3">Conecta con CEFI</h2>
+               <p class="con-subtitle mb-3">Estamos listos para atenderte. Elige la forma que prefieras para comunicarte con nosotros.</p>
             </div>
           </div>
           <div class="row g-4 justify-content-center">
@@ -143,64 +137,94 @@
       <section class="py-5 bg-white" id="formulario-contacto" aria-labelledby="form-title">
         <div class="container py-3">
           <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="con-form-card p-5">
-                <h2 id="form-title" class="con-section-title text-center mb-2">Envianos un mensaje</h2>
-                <p class="con-form-lead text-center mb-4">Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
+            <div class="col-xl-11">
+              <div class="con-form-card con-form-shell">
+                <div class="con-form-intro">
+                  <span class="con-form-kicker">Formulario de contacto</span>
+                  <h2 id="form-title" class="con-section-title mb-3">Envianos un mensaje</h2>
+                  <p class="con-form-lead mb-4">Cuéntanos en qué podemos ayudarte y te responderemos con la orientación adecuada lo antes posible.</p>
 
-                <div class="alert con-alert-success d-none" id="conSuccessMsg" role="alert" aria-live="polite">
-                  <i class="fa-solid fa-circle-check me-2"></i>Tu mensaje fue enviado. Te contactaremos pronto.
-                </div>
-
-                <form id="contactoForm" novalidate>
-                  <div class="row g-3">
-                    <div class="col-md-6">
-                      <label for="conNombre" class="con-label">Nombre completo <span class="con-required">*</span></label>
-                      <input type="text" class="form-control con-input" id="conNombre" name="nombre" placeholder="Tu nombre" required minlength="3" autocomplete="name" />
-                      <div class="invalid-feedback">Por favor ingresa tu nombre completo.</div>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="conEmail" class="con-label">Correo electronico <span class="con-required">*</span></label>
-                      <input type="email" class="form-control con-input" id="conEmail" name="email" placeholder="tucorreo@ejemplo.com" required autocomplete="email" />
-                      <div class="invalid-feedback">Ingresa un correo electronico valido.</div>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="conTel" class="con-label">Telefono <span class="con-required">*</span></label>
-                      <input type="tel" class="form-control con-input" id="conTel" name="telefono" placeholder="8888-8888" required pattern="[0-9\-\s\+]{7,15}" autocomplete="tel" />
-                      <div class="invalid-feedback">Ingresa un numero de telefono valido.</div>
-                    </div>
-                    <div class="col-md-6">
-                      <label for="conAsunto" class="con-label">Asunto <span class="con-required">*</span></label>
-                      <select class="form-select con-input" id="conAsunto" name="asunto" required>
-                        <option value="" disabled selected>Selecciona un asunto</option>
-                        <option value="informacion">Información sobre programas</option>
-                        <option value="matricula">Proceso de matricula</option>
-                        <option value="costos">Costos y becas</option>
-                        <option value="voluntariado">Voluntariado e involucramiento</option>
-                        <option value="alianzas">Alianzas institucionales</option>
-                        <option value="otro">Otro</option>
-                      </select>
-                      <div class="invalid-feedback">Selecciona un asunto.</div>
-                    </div>
-                    <div class="col-12">
-                      <label for="conMensaje" class="con-label">Mensaje <span class="con-required">*</span></label>
-                      <textarea class="form-control con-input" id="conMensaje" name="mensaje" rows="5" placeholder="Escribenos tu consulta o mensaje..." required minlength="20"></textarea>
-                      <div class="invalid-feedback">El mensaje debe tener al menos 20 caracteres.</div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-check">
-                        <input class="form-check-input con-checkbox" type="checkbox" id="conTerminos" name="terminos" required />
-                        <label class="form-check-label con-terms-label" for="conTerminos">
-                          Acepto los <a href="https://www.ceficr.com/" target="_blank" class="con-terms-link">terminos y condiciones</a> y la politica de privacidad de CEFI. <span class="con-required">*</span>
-                        </label>
-                        <div class="invalid-feedback">Debes aceptar los terminos para continuar.</div>
+                  <div class="con-form-feature-list">
+                    <div class="con-form-feature-item">
+                      <span class="con-form-feature-icon"><i class="fa-solid fa-comments"></i></span>
+                      <div>
+                        <strong>Respuesta cercana</strong>
+                        <p class="mb-0">Atendemos consultas académicas, administrativas y generales.</p>
                       </div>
                     </div>
-                    <div class="col-12 text-center mt-2">
-                      <button type="submit" class="btn btn-programas px-5">Enviar mensaje <i class="fa-solid fa-paper-plane ms-2"></i></button>
+                    <div class="con-form-feature-item">
+                      <span class="con-form-feature-icon"><i class="fa-solid fa-clock"></i></span>
+                      <div>
+                        <strong>Proceso simple</strong>
+                        <p class="mb-0">Déjanos tus datos y te contactamos sin complicaciones.</p>
+                      </div>
+                    </div>
+                    <div class="con-form-feature-item">
+                      <span class="con-form-feature-icon"><i class="fa-solid fa-circle-check"></i></span>
+                      <div>
+                        <strong>Seguimiento claro</strong>
+                        <p class="mb-0">Te orientamos según el tema que necesites resolver.</p>
+                      </div>
                     </div>
                   </div>
-                </form>
+                </div>
+
+                <div class="con-form-content p-5">
+                  <div class="alert con-alert-success d-none" id="conSuccessMsg" role="alert" aria-live="polite">
+                    <i class="fa-solid fa-circle-check me-2"></i>Tu mensaje fue enviado. Te contactaremos pronto.
+                  </div>
+
+                  <form id="contactoForm" novalidate>
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <label for="conNombre" class="con-label">Nombre completo <span class="con-required">*</span></label>
+                        <input type="text" class="form-control con-input" id="conNombre" name="nombre" placeholder="Tu nombre" required minlength="3" autocomplete="name" />
+                        <div class="invalid-feedback">Por favor ingresa tu nombre completo.</div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="conEmail" class="con-label">Correo electronico <span class="con-required">*</span></label>
+                        <input type="email" class="form-control con-input" id="conEmail" name="email" placeholder="tucorreo@ejemplo.com" required autocomplete="email" />
+                        <div class="invalid-feedback">Ingresa un correo electronico valido.</div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="conTel" class="con-label">Telefono <span class="con-required">*</span></label>
+                        <input type="tel" class="form-control con-input" id="conTel" name="telefono" placeholder="8888-8888" required pattern="[0-9\-\s\+]{7,15}" autocomplete="tel" />
+                        <div class="invalid-feedback">Ingresa un numero de telefono valido.</div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="conAsunto" class="con-label">Asunto <span class="con-required">*</span></label>
+                        <select class="form-select con-input" id="conAsunto" name="asunto" required>
+                          <option value="" disabled selected>Selecciona un asunto</option>
+                          <option value="informacion">Información sobre programas</option>
+                          <option value="matricula">Proceso de matricula</option>
+                          <option value="costos">Costos y becas</option>
+                          <option value="voluntariado">Voluntariado e involucramiento</option>
+                          <option value="alianzas">Alianzas institucionales</option>
+                          <option value="otro">Otro</option>
+                        </select>
+                        <div class="invalid-feedback">Selecciona un asunto.</div>
+                      </div>
+                      <div class="col-12">
+                        <label for="conMensaje" class="con-label">Mensaje <span class="con-required">*</span></label>
+                        <textarea class="form-control con-input con-textarea" id="conMensaje" name="mensaje" rows="6" placeholder="Escribenos tu consulta o mensaje..." required minlength="20"></textarea>
+                        <div class="invalid-feedback">El mensaje debe tener al menos 20 caracteres.</div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check con-check-wrap">
+                          <input class="form-check-input con-checkbox" type="checkbox" id="conTerminos" name="terminos" required />
+                          <label class="form-check-label con-terms-label" for="conTerminos">
+                            Acepto los <a href="https://www.ceficr.com/" target="_blank" class="con-terms-link">terminos y condiciones</a> y la politica de privacidad de CEFI. <span class="con-required">*</span>
+                          </label>
+                          <div class="invalid-feedback">Debes aceptar los terminos para continuar.</div>
+                        </div>
+                      </div>
+                      <div class="col-12 d-md-flex align-items-center justify-content-between gap-3 mt-2">
+                        <p class="con-form-note mb-0">Campos marcados con <span class="con-required">*</span> son obligatorios.</p>
+                        <button type="submit" class="btn btn-programas con-submit-btn">Enviar mensaje <i class="fa-solid fa-paper-plane ms-2"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
