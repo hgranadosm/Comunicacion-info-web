@@ -475,3 +475,7 @@
     transform: none !important;
   }
 }
+
+.banner-section {
+  background-image: url('../img/involucrate/banner.jpg');
+}

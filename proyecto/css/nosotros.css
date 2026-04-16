@@ -293,3 +293,7 @@
   border-color: #7BA32B;
   box-shadow: 0 0 0 0.2rem rgba(123, 163, 43, 0.2);
 }
+
+.banner-section {
+  background-image: url('../img/2.2.jpg');
+}

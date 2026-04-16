@@ -641,3 +641,8 @@
     transition: none;
   }
 }
+
+
+.banner-section {
+  background-image: url('../img/programas/banner.jpg');
+}

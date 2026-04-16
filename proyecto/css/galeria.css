@@ -491,3 +491,7 @@
     transition: none !important;
   }
 }
+
+.banner-section {
+  background-image: url('../img/2.3.jpg');
+}

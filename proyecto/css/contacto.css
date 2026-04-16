@@ -365,3 +365,7 @@
     min-width: 0;
   }
 }
+
+.banner-section {
+  background-image: url('../img/contacto/banner.jpg');
+}
