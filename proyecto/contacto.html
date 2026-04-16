@@ -141,7 +141,7 @@
               <div class="con-form-card con-form-shell">
                 <div class="con-form-intro">
                   <span class="con-form-kicker">Formulario de contacto</span>
-                  <h2 id="form-title" class="con-section-title mb-3">Envianos un mensaje</h2>
+                  <h2 id="form-title" class="con-section-title mb-3">Envíanos un mensaje</h2>
                   <p class="con-form-lead mb-4">Cuéntanos en qué podemos ayudarte y te responderemos con la orientación adecuada lo antes posible.</p>
 
                   <div class="con-form-feature-list">
@@ -171,7 +171,7 @@
 
                 <div class="con-form-content p-5">
                   <div class="alert con-alert-success d-none" id="conSuccessMsg" role="alert" aria-live="polite">
-                    <i class="fa-solid fa-circle-check me-2"></i>Tu mensaje fue enviado. Te contactaremos pronto.
+                    <i class="fa-solid fa-circle-check me-2"></i>Tu mensaje fué enviado. Te contactaremos pronto.
                   </div>
 
                   <form id="contactoForm" novalidate>
@@ -182,21 +182,21 @@
                         <div class="invalid-feedback">Por favor ingresa tu nombre completo.</div>
                       </div>
                       <div class="col-md-6">
-                        <label for="conEmail" class="con-label">Correo electronico <span class="con-required">*</span></label>
+                        <label for="conEmail" class="con-label">Correo electrónico <span class="con-required">*</span></label>
                         <input type="email" class="form-control con-input" id="conEmail" name="email" placeholder="tucorreo@ejemplo.com" required autocomplete="email" />
-                        <div class="invalid-feedback">Ingresa un correo electronico valido.</div>
+                        <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
                       </div>
                       <div class="col-md-6">
-                        <label for="conTel" class="con-label">Telefono <span class="con-required">*</span></label>
+                        <label for="conTel" class="con-label">Teléfono <span class="con-required">*</span></label>
                         <input type="tel" class="form-control con-input" id="conTel" name="telefono" placeholder="8888-8888" required pattern="[0-9\-\s\+]{7,15}" autocomplete="tel" />
-                        <div class="invalid-feedback">Ingresa un numero de telefono valido.</div>
+                        <div class="invalid-feedback">Ingresa un número de teléfono válido.</div>
                       </div>
                       <div class="col-md-6">
                         <label for="conAsunto" class="con-label">Asunto <span class="con-required">*</span></label>
                         <select class="form-select con-input" id="conAsunto" name="asunto" required>
                           <option value="" disabled selected>Selecciona un asunto</option>
                           <option value="informacion">Información sobre programas</option>
-                          <option value="matricula">Proceso de matricula</option>
+                          <option value="matricula">Proceso de matrícula</option>
                           <option value="costos">Costos y becas</option>
                           <option value="voluntariado">Voluntariado e involucramiento</option>
                           <option value="alianzas">Alianzas institucionales</option>
@@ -206,16 +206,16 @@
                       </div>
                       <div class="col-12">
                         <label for="conMensaje" class="con-label">Mensaje <span class="con-required">*</span></label>
-                        <textarea class="form-control con-input con-textarea" id="conMensaje" name="mensaje" rows="6" placeholder="Escribenos tu consulta o mensaje..." required minlength="20"></textarea>
+                        <textarea class="form-control con-input con-textarea" id="conMensaje" name="mensaje" rows="6" placeholder="Escríbenos tu consulta o mensaje..." required minlength="20"></textarea>
                         <div class="invalid-feedback">El mensaje debe tener al menos 20 caracteres.</div>
                       </div>
                       <div class="col-12">
                         <div class="form-check con-check-wrap">
                           <input class="form-check-input con-checkbox" type="checkbox" id="conTerminos" name="terminos" required />
                           <label class="form-check-label con-terms-label" for="conTerminos">
-                            Acepto los <a href="https://www.ceficr.com/" target="_blank" class="con-terms-link">terminos y condiciones</a> y la politica de privacidad de CEFI. <span class="con-required">*</span>
+                            Acepto los <a href="https://www.ceficr.com/" target="_blank" class="con-terms-link">términos y condiciones</a> y la política de privacidad de CEFI. <span class="con-required">*</span>
                           </label>
-                          <div class="invalid-feedback">Debes aceptar los terminos para continuar.</div>
+                          <div class="invalid-feedback">Debes aceptar los términos para continuar.</div>
                         </div>
                       </div>
                       <div class="col-12 d-md-flex align-items-center justify-content-between gap-3 mt-2">
@@ -231,11 +231,15 @@
         </div>
       </section>
 
-      <section class="con-map-section" id="mapa-ubicacion" aria-label="Mapa de ubicación CEFI">
+      <section class="con-map-section" id="mapa-ubicacion" aria-labelledby="mapa-title">
+        <div class="container py-5 text-center">
+          <h2 id="mapa-title" class="con-section-title mb-4">Dónde estamos</h2>
+          <p class="con-subtitle mb-0">Encuéntranos fácilmente en el corazón de Guápiles.</p>
+        </div>
         <iframe
           src="https://www.google.com/maps?q=Centro+Educativo+Valle+Del+Sol+Guapiles+Costa+Rica&output=embed"
           width="100%"
-          height="450"
+          height="680"
           style="border:0; display:block;"
           allowfullscreen
           loading="lazy"
