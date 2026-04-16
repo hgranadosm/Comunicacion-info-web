@@ -210,12 +210,33 @@
   background: #f8fbf7;
   border: 1px solid #e2ede0;
   border-radius: 8px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  animation: instalSlideUp 0.65s ease both;
 }
 
 .instal-service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(35, 79, 32, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 14px 34px rgba(35, 79, 32, 0.16);
+  border-color: rgba(35, 79, 32, 0.45);
+}
+
+.instal-service-card::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -60%;
+  width: 70%;
+  height: 180%;
+  background: linear-gradient(120deg, rgba(210, 226, 59, 0.2), rgba(210, 226, 59, 0));
+  transform: rotate(16deg);
+  transition: left 0.55s ease;
+  pointer-events: none;
+}
+
+.instal-service-card:hover::before {
+  left: 105%;
 }
 
 .instal-icon-wrap {
@@ -226,11 +247,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .instal-icon-wrap i {
   color: #D2E23B;
   font-size: 1.4rem;
+}
+
+.instal-service-card:hover .instal-icon-wrap {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 18px rgba(35, 79, 32, 0.25);
 }
 
 .instal-service-card h3 {
@@ -244,18 +271,121 @@
   opacity: 0.85;
 }
 
+.instal-section {
+  position: relative;
+  isolation: isolate;
+}
+
+.instal-section::before,
+.instal-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.instal-section::before {
+  width: min(28vw, 280px);
+  height: min(28vw, 280px);
+  left: -8%;
+  top: 8%;
+  background: radial-gradient(circle, rgba(210, 226, 59, 0.2) 0%, rgba(210, 226, 59, 0) 70%);
+}
+
+.instal-section::after {
+  width: min(24vw, 240px);
+  height: min(24vw, 240px);
+  right: -6%;
+  bottom: 6%;
+  background: radial-gradient(circle, rgba(35, 79, 32, 0.1) 0%, rgba(35, 79, 32, 0) 72%);
+}
+
+.instal-kicker {
+  display: inline-block;
+  color: #234F20;
+  border: 1px solid rgba(35, 79, 32, 0.35);
+  background: rgba(210, 226, 59, 0.22);
+  border-radius: 2rem;
+  padding: 0.35rem 0.95rem;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.instal-stats-row {
+  margin-top: -0.5rem;
+}
+
+.instal-stat-pill {
+  border: 1px solid rgba(35, 79, 32, 0.2);
+  background: linear-gradient(120deg, rgba(35, 79, 32, 0.06), rgba(210, 226, 59, 0.12));
+  border-radius: 999px;
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.instal-stat-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(35, 79, 32, 0.12);
+}
+
+.instal-stat-value {
+  color: #234F20;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.instal-stat-label {
+  color: #234F20;
+  opacity: 0.82;
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.instal-card-tag {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(35, 79, 32, 0.1);
+  border: 1px solid rgba(35, 79, 32, 0.15);
+  color: #234F20;
+  font-weight: 700;
+  font-size: 0.76rem;
+  letter-spacing: 0.03em;
+}
+
+.instal-item:nth-child(1) .instal-service-card { animation-delay: 0.05s; }
+.instal-item:nth-child(2) .instal-service-card { animation-delay: 0.11s; }
+.instal-item:nth-child(3) .instal-service-card { animation-delay: 0.17s; }
+.instal-item:nth-child(4) .instal-service-card { animation-delay: 0.23s; }
+.instal-item:nth-child(5) .instal-service-card { animation-delay: 0.29s; }
+.instal-item:nth-child(6) .instal-service-card { animation-delay: 0.35s; }
+
 .gal-infra-banner {
   background: #234F20;
+  border: 1px solid rgba(35, 79, 32, 0.18);
+  box-shadow: 0 16px 38px rgba(35, 79, 32, 0.14);
 }
 
 .gal-infra-img {
-  height: 340px;
+  height: 100%;
+  min-height: 360px;
   object-fit: cover;
   display: block;
 }
 
 .gal-infra-text-col {
-  background: #234F20;
+  background: linear-gradient(145deg, #234F20 0%, #1e431b 100%);
+  padding: clamp(1.8rem, 3.5vw, 2.8rem);
 }
 
 .gal-infra-title {
@@ -267,4 +397,114 @@
 .gal-infra-text-col p {
   color: rgba(255, 255, 255, 0.88);
   font-size: 1rem;
+}
+
+.gal-infra-visual {
+  position: relative;
+  height: 100%;
+}
+
+.gal-infra-badge {
+  position: absolute;
+  left: 1.2rem;
+  bottom: 1.2rem;
+  background: rgba(13, 26, 12, 0.72);
+  border: 1px solid rgba(210, 226, 59, 0.45);
+  color: #D2E23B;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.gal-infra-content-wrap {
+  max-width: 450px;
+}
+
+.gal-infra-eyebrow {
+  color: rgba(210, 226, 59, 0.9);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-weight: 700;
+}
+
+.gal-infra-divider {
+  width: 72px;
+  height: 2px;
+  background: rgba(210, 226, 59, 0.7);
+  border-radius: 2px;
+  margin: 0 0 1rem;
+}
+
+.gal-infra-points li {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.94rem;
+}
+
+.gal-infra-points li + li {
+  margin-top: 0.45rem;
+}
+
+.gal-infra-points i {
+  color: #D2E23B;
+  font-size: 0.9rem;
+  flex: 0 0 auto;
+}
+
+@keyframes instalSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .instal-stat-pill {
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 16px;
+  }
+
+  .instal-stat-label {
+    font-size: 0.78rem;
+    text-align: center;
+  }
+
+  .instal-service-card {
+    min-height: 100%;
+  }
+
+  .gal-infra-img {
+    min-height: 270px;
+  }
+
+  .gal-infra-text-col {
+    padding: 1.5rem;
+  }
+
+  .gal-infra-badge {
+    left: 0.9rem;
+    bottom: 0.9rem;
+    font-size: 0.72rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .instal-service-card,
+  .instal-service-card::before,
+  .instal-icon-wrap,
+  .instal-stat-pill {
+    animation: none !important;
+    transition: none !important;
+  }
 }
