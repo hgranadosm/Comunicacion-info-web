@@ -201,5 +201,21 @@
   .navbar-nav .nav-link {
     font-size: 18px;
     padding: 12px 0;
+        color: #234F20;
+        opacity: 1;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link[aria-current="page"] {
+        color: #234F20;
+    }
+
+    .navbar-nav .nav-link.active::after,
+    .navbar-nav .nav-link[aria-current="page"]::after {
+        left: 0;
+        right: 0;
+        bottom: 0.05rem;
+        height: 2px;
+        background: #7BA32B;
   }
 }
