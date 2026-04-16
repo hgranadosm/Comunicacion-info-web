@@ -194,3 +194,7 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
+
+.banner-section {
+  background-image: url('../img/2.2.jpg');
+}
