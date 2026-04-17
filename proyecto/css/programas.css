@@ -74,7 +74,7 @@
 
 .program-slider {
   position: relative;
-  padding-inline: clamp(0.4rem, 1.8vw, 2.8rem);
+  padding-inline: 3rem;
   z-index: 1;
 }
 
@@ -83,6 +83,7 @@
   grid-auto-flow: column;
   grid-auto-columns: minmax(280px, calc((100% - 2.4rem) / 3));
   gap: 1.2rem;
+  overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-behavior: smooth;
@@ -119,11 +120,11 @@
 }
 
 .program-slider-btn.prev {
-  left: -2rem;
+  left: 0;
 }
 
 .program-slider-btn.next {
-  right: -2rem;
+  right: 0;
 }
 
 .program-slider-btn:hover:not(:disabled),
@@ -339,7 +340,7 @@
 
 @media (max-width: 767.98px) {
   .program-slider {
-    padding-inline: 0.2rem;
+    padding-inline: 2.5rem;
   }
 
   .program-slider-track {
@@ -353,11 +354,11 @@
   }
 
   .program-slider-btn.prev {
-    left: -0.35rem;
+    left: 0;
   }
 
   .program-slider-btn.next {
-    right: -0.35rem;
+    right: 0;
   }
 }
 
