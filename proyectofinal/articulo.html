@@ -30,10 +30,12 @@
     <link rel="stylesheet" href="css/articulo.css" />
   </head>
   <body>
-    <header class="banner-section espacio position-relative art-page-header">
+    <header class="banner-section espacio position-relative art-page-header" tabindex="0" aria-label="Encabezado principal de la pagina Articulo">
       <div class="banner-overlay"></div>
       <nav
         class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0 start-0"
+        tabindex="0"
+        aria-label="Navegacion principal"
       >
         <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="#">
@@ -109,7 +111,7 @@
     </header>
 
     <main>
-      <section class="art-hero py-5 bg-white" aria-labelledby="articulo-title">
+      <section class="art-hero py-5 bg-white" aria-labelledby="articulo-title" tabindex="0" aria-label="Introduccion del articulo">
         <div class="container py-4">
           <div class="row justify-content-center">
             <div class="col-lg-10">
@@ -126,7 +128,7 @@
         </div>
       </section>
 
-      <section class="art-body-section py-5 bg-light">
+      <section class="art-body-section py-5 bg-light" tabindex="0" aria-label="Contenido principal del articulo">
         <div class="container py-3">
           <div class="row g-5 justify-content-center">
             <div class="col-lg-8">
@@ -179,11 +181,11 @@
                 <div class="art-sidebar-card p-4 mb-4">
                   <h3 class="art-sidebar-title mb-3">En este artículo</h3>
                   <ul class="art-toc list-unstyled mb-0">
-                    <li><a href="#">Empieza por conocerte mejor</a></li>
-                    <li><a href="#">Investiga el mercado laboral</a></li>
-                    <li><a href="#">Evalúa el contenido del programa</a></li>
-                    <li><a href="#">Habla con profesionales</a></li>
-                    <li><a href="#">No elijas desde el miedo</a></li>
+                    <li><a href="#" tabindex="0" aria-label="Ir a la seccion empieza por conocerte mejor">Empieza por conocerte mejor</a></li>
+                    <li><a href="#" tabindex="0" aria-label="Ir a la seccion investiga el mercado laboral">Investiga el mercado laboral</a></li>
+                    <li><a href="#" tabindex="0" aria-label="Ir a la seccion evalua el contenido del programa">Evalúa el contenido del programa</a></li>
+                    <li><a href="#" tabindex="0" aria-label="Ir a la seccion habla con profesionales">Habla con profesionales</a></li>
+                    <li><a href="#" tabindex="0" aria-label="Ir a la seccion no elijas desde el miedo">No elijas desde el miedo</a></li>
                   </ul>
                 </div>
 
@@ -207,7 +209,7 @@
                   <p class="art-cta-kicker mb-2">¿Necesitas ayuda para decidir?</p>
                   <h3 class="art-cta-title mb-3">Recibe orientación sobre nuestros programas</h3>
                   <p class="mb-4">Podemos ayudarte a identificar la opción que mejor se alinea con tu perfil y tus metas.</p>
-                  <a href="https://wa.link/22tc96" target="_blank" class="btn btn-programas w-100">Hablar con CEFI</a>
+                  <a href="https://wa.link/22tc96" target="_blank" class="btn btn-programas w-100" tabindex="0" aria-label="Hablar con CEFI por WhatsApp">Hablar con CEFI</a>
                 </div>
               </aside>
             </div>
@@ -216,15 +218,15 @@
       </section>
     </main>
 
-    <footer class="cefi-footer">
+    <footer class="cefi-footer" tabindex="0" aria-label="Pie de pagina con contactos y enlaces utiles">
       <div class="container py-5">
         <div class="row align-items-center pt-5 pb-5">
           <div class="col-md-4 mb-4 mb-md-0 text-md-start text-center">
             <img src="img/logoCefi.png" alt="Logo CEFI" width="80" class="mb-3" />
             <ul class="footer-contact-list list-unstyled mb-3">
               <li><span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span> (506) 2711-1010</li>
-              <li><span class="footer-contact-icon"><i class="fa-brands fa-whatsapp"></i></span> <a href="https://wa.link/22tc96" target="_blank">8992-9180</a></li>
-              <li><span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span> <a href="mailto:info@ceficr.com">info@ceficr.com</a></li>
+              <li><span class="footer-contact-icon"><i class="fa-brands fa-whatsapp"></i></span> <a href="https://wa.link/22tc96" target="_blank" tabindex="0" aria-label="Contactar por WhatsApp al 8992 9180">8992-9180</a></li>
+              <li><span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span> <a href="mailto:info@ceficr.com" tabindex="0" aria-label="Enviar correo a info arroba ceficr punto com">info@ceficr.com</a></li>
             </ul>
            
             <div class="footer-address">
@@ -246,14 +248,14 @@
           </div>
           <div class="col-md-4 text-md-end text-center">
               <div class="footer-social mb-3">
-                <a href="https://www.instagram.com/cefi_cr" target="_blank" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@cefi_cr" target="_blank" class="footer-social-icon"><i class="fab fa-tiktok"></i></a>
-                <a href="https://www.youtube.com/@ceficr" target="_blank" class="footer-social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/cefi_cr" target="_blank" class="footer-social-icon" tabindex="0" aria-label="Instagram de CEFI"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@cefi_cr" target="_blank" class="footer-social-icon" tabindex="0" aria-label="TikTok de CEFI"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@ceficr" target="_blank" class="footer-social-icon" tabindex="0" aria-label="YouTube de CEFI"><i class="fab fa-youtube"></i></a>
               </div>
-              <a href="https://wa.link/22tc96" target="_blank" class="footer-btn btn btn-cefi mb-3"><i class="fa-solid fa-heart me-2"></i> Contáctanos</a>
+              <a href="https://wa.link/22tc96" target="_blank" class="footer-btn btn btn-cefi mb-3" tabindex="0" aria-label="Contactanos por WhatsApp"><i class="fa-solid fa-heart me-2"></i> Contáctanos</a>
               <div class="footer-privacy mt-3">
-                <a href="https://www.ceficr.com/" target="_blank">Política de Privacidad</a> |
-                <a href="https://www.ceficr.com/" target="_blank">Recursos CEFI</a>
+                <a href="https://www.ceficr.com/" target="_blank" tabindex="0" aria-label="Abrir politica de privacidad">Política de Privacidad</a> |
+                <a href="https://www.ceficr.com/" target="_blank" tabindex="0" aria-label="Abrir recursos CEFI">Recursos CEFI</a>
               </div>
           </div>
         </div>

@@ -30,10 +30,12 @@
     <link rel="stylesheet" href="css/contacto.css" />
   </head>
   <body>
-    <header class="banner-section espacio position-relative">
+    <header class="banner-section espacio position-relative" tabindex="0" aria-label="Encabezado principal de la pagina Contacto">
       <div class="banner-overlay"></div>
       <nav
         class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0 start-0"
+        tabindex="0"
+        aria-label="Navegacion principal"
       >
         <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="#">
@@ -111,7 +113,7 @@
 
     <main>
 
-      <section class="py-5 bg-light" id="info-contacto" aria-labelledby="info-contacto-title">
+      <section class="py-5 bg-light" id="info-contacto" aria-labelledby="info-contacto-title" tabindex="0" aria-label="Informacion de contacto de CEFI">
         <div class="container py-3">
           <div class="row mb-4">
             <div class="col-12 text-center">
@@ -145,7 +147,7 @@
         </div>
       </section>
 
-      <section class="py-5 bg-white" id="formulario-contacto" aria-labelledby="form-title">
+      <section class="py-5 bg-white" id="formulario-contacto" aria-labelledby="form-title" tabindex="0" aria-label="Formulario de contacto">
         <div class="container py-3">
           <div class="row justify-content-center">
             <div class="col-xl-11">
@@ -189,22 +191,22 @@
                     <div class="row g-3">
                       <div class="col-md-6">
                         <label for="conNombre" class="con-label">Nombre completo <span class="con-required">*</span></label>
-                        <input type="text" class="form-control con-input" id="conNombre" name="nombre" placeholder="Tu nombre" required minlength="3" autocomplete="name" />
+                        <input type="text" class="form-control con-input" id="conNombre" name="nombre" placeholder="Tu nombre" required minlength="3" autocomplete="name" tabindex="0" aria-label="Nombre completo" />
                         <div class="invalid-feedback">Por favor ingresa tu nombre completo.</div>
                       </div>
                       <div class="col-md-6">
                         <label for="conEmail" class="con-label">Correo electrónico <span class="con-required">*</span></label>
-                        <input type="email" class="form-control con-input" id="conEmail" name="email" placeholder="tucorreo@ejemplo.com" required autocomplete="email" />
+                        <input type="email" class="form-control con-input" id="conEmail" name="email" placeholder="tucorreo@ejemplo.com" required autocomplete="email" tabindex="0" aria-label="Correo electronico" />
                         <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
                       </div>
                       <div class="col-md-6">
                         <label for="conTel" class="con-label">Teléfono <span class="con-required">*</span></label>
-                        <input type="tel" class="form-control con-input" id="conTel" name="telefono" placeholder="8888-8888" required pattern="[0-9\-\s\+]{7,15}" autocomplete="tel" />
+                        <input type="tel" class="form-control con-input" id="conTel" name="telefono" placeholder="8888-8888" required pattern="[0-9\-\s\+]{7,15}" autocomplete="tel" tabindex="0" aria-label="Telefono" />
                         <div class="invalid-feedback">Ingresa un número de teléfono válido.</div>
                       </div>
                       <div class="col-md-6">
                         <label for="conAsunto" class="con-label">Asunto <span class="con-required">*</span></label>
-                        <select class="form-select con-input" id="conAsunto" name="asunto" required>
+                        <select class="form-select con-input" id="conAsunto" name="asunto" required tabindex="0" aria-label="Selecciona un asunto">
                           <option value="" disabled selected>Selecciona un asunto</option>
                           <option value="informacion">Información sobre programas</option>
                           <option value="matricula">Proceso de matrícula</option>
@@ -217,21 +219,21 @@
                       </div>
                       <div class="col-12">
                         <label for="conMensaje" class="con-label">Mensaje <span class="con-required">*</span></label>
-                        <textarea class="form-control con-input con-textarea" id="conMensaje" name="mensaje" rows="6" placeholder="Escríbenos tu consulta o mensaje..." required minlength="20"></textarea>
+                        <textarea class="form-control con-input con-textarea" id="conMensaje" name="mensaje" rows="6" placeholder="Escríbenos tu consulta o mensaje..." required minlength="20" tabindex="0" aria-label="Mensaje"></textarea>
                         <div class="invalid-feedback">El mensaje debe tener al menos 20 caracteres.</div>
                       </div>
                       <div class="col-12">
                         <div class="form-check con-check-wrap">
-                          <input class="form-check-input con-checkbox" type="checkbox" id="conTerminos" name="terminos" required />
+                          <input class="form-check-input con-checkbox" type="checkbox" id="conTerminos" name="terminos" required tabindex="0" aria-label="Aceptar terminos y condiciones" />
                           <label class="form-check-label con-terms-label" for="conTerminos">
-                            Acepto los <a href="https://www.ceficr.com/" target="_blank" class="con-terms-link">términos y condiciones</a> y la política de privacidad de CEFI. <span class="con-required">*</span>
+                            Acepto los <a href="https://www.ceficr.com/" target="_blank" class="con-terms-link" tabindex="0" aria-label="Abrir terminos y condiciones">términos y condiciones</a> y la política de privacidad de CEFI. <span class="con-required">*</span>
                           </label>
                           <div class="invalid-feedback">Debes aceptar los términos para continuar.</div>
                         </div>
                       </div>
                       <div class="col-12 d-md-flex align-items-center justify-content-between gap-3 mt-2">
                         <p class="con-form-note mb-0">Campos marcados con <span class="con-required">*</span> son obligatorios.</p>
-                        <button type="submit" class="btn btn-programas con-submit-btn">Enviar mensaje <i class="fa-solid fa-paper-plane ms-2"></i></button>
+                        <button type="submit" class="btn btn-programas con-submit-btn" tabindex="0" aria-label="Enviar mensaje de contacto">Enviar mensaje <i class="fa-solid fa-paper-plane ms-2"></i></button>
                       </div>
                     </div>
                   </form>
@@ -242,7 +244,7 @@
         </div>
       </section>
 
-      <section class="con-map-section" id="mapa-ubicacion" aria-labelledby="mapa-title">
+      <section class="con-map-section" id="mapa-ubicacion" aria-labelledby="mapa-title" tabindex="0" aria-label="Mapa de ubicacion de CEFI">
         <div class="container py-5 text-center">
           <h2 id="mapa-title" class="con-section-title mb-4">Dónde estamos</h2>
           <p class="con-subtitle mb-0">Encuéntranos fácilmente en el corazón de Guápiles.</p>
@@ -262,15 +264,15 @@
 
     </main>
       
-    <footer class="cefi-footer ">
+    <footer class="cefi-footer " tabindex="0" aria-label="Pie de pagina con contactos y enlaces utiles">
       <div class="container py-5">
         <div class="row align-items-center pt-5 pb-5">
           <div class="col-md-4 mb-4 mb-md-0 text-md-start text-center">
             <img src="img/logoCefi.png" alt="Logo CEFI" width="80" class="mb-3" />
             <ul class="footer-contact-list list-unstyled mb-3">
               <li><span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span> (506) 2711-1010</li>
-              <li><span class="footer-contact-icon"><i class="fa-brands fa-whatsapp"></i></span> <a href="https://wa.link/22tc96" target="_blank">8992-9180</a></li>
-              <li><span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span> <a href="mailto:info@ceficr.com">info@ceficr.com</a></li>
+              <li><span class="footer-contact-icon"><i class="fa-brands fa-whatsapp"></i></span> <a href="https://wa.link/22tc96" target="_blank" tabindex="0" aria-label="Contactar por WhatsApp al 8992 9180">8992-9180</a></li>
+              <li><span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span> <a href="mailto:info@ceficr.com" tabindex="0" aria-label="Enviar correo a info arroba ceficr punto com">info@ceficr.com</a></li>
             </ul>
            
             <div class="footer-address">
@@ -292,14 +294,14 @@
           </div>
           <div class="col-md-4 text-md-end text-center">
               <div class="footer-social mb-3">
-                <a href="https://www.instagram.com/cefi_cr" target="_blank" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@cefi_cr" target="_blank" class="footer-social-icon"><i class="fab fa-tiktok"></i></a>
-                <a href="https://www.youtube.com/@ceficr" target="_blank" class="footer-social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/cefi_cr" target="_blank" class="footer-social-icon" tabindex="0" aria-label="Instagram de CEFI"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@cefi_cr" target="_blank" class="footer-social-icon" tabindex="0" aria-label="TikTok de CEFI"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@ceficr" target="_blank" class="footer-social-icon" tabindex="0" aria-label="YouTube de CEFI"><i class="fab fa-youtube"></i></a>
               </div>
-              <a href="https://wa.link/22tc96" target="_blank" class="footer-btn btn btn-cefi mb-3"><i class="fa-solid fa-heart me-2"></i> Contáctanos</a>
+              <a href="https://wa.link/22tc96" target="_blank" class="footer-btn btn btn-cefi mb-3" tabindex="0" aria-label="Contactanos por WhatsApp"><i class="fa-solid fa-heart me-2"></i> Contáctanos</a>
               <div class="footer-privacy mt-3">
-                <a href="https://www.ceficr.com/" target="_blank">Política de Privacidad</a> |
-                <a href="https://www.ceficr.com/" target="_blank">Recursos CEFI</a>
+                <a href="https://www.ceficr.com/" target="_blank" tabindex="0" aria-label="Abrir politica de privacidad">Política de Privacidad</a> |
+                <a href="https://www.ceficr.com/" target="_blank" tabindex="0" aria-label="Abrir recursos CEFI">Recursos CEFI</a>
               </div>
           </div>
         </div>
