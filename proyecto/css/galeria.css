@@ -452,6 +452,23 @@
 }
 
 @media (max-width: 767.98px) {
+  .gal-filters {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    width: min(100%, 340px);
+    margin-inline: auto;
+  }
+
+  .gal-filter-btn {
+    width: 100%;
+    max-width: 340px;
+    text-align: center;
+    justify-content: center;
+    padding-inline: 1rem;
+  }
+
   .instal-stat-pill {
     justify-content: center;
     flex-direction: column;
