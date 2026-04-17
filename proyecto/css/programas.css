@@ -215,10 +215,12 @@
   font-size: clamp(1.15rem, 2vw, 1.85rem);
   font-weight: 800;
   line-height: 1.08;
-  max-width: 92%;
+  max-width: 96%;
   margin-inline: auto;
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  text-wrap: balance;
 }
 
 .course-sheet {
@@ -392,12 +394,17 @@
   }
 
   .course-poster-title {
-    font-size: clamp(0.9rem, 4.5vw, 1.2rem);
-    line-height: 1.15;
+    font-size: clamp(0.82rem, 3.9vw, 1.02rem);
+    line-height: 1.2;
   }
 
   .course-poster-label {
-    font-size: 0.72rem;
+    font-size: 0.66rem;
+    line-height: 1.2;
+  }
+
+  .course-poster-content {
+    padding: 0.85rem 0.75rem 1rem;
   }
 
   .program-slider .btn-programas {
@@ -749,6 +756,23 @@
   line-height: 1.55;
 }
 
+.oferta-banner-content .btn-programas {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.oferta-banner-content .btn-programas .me-2 {
+  margin-right: 0 !important;
+}
+
+.oferta-banner-content .btn-programas i {
+  flex: 0 0 auto;
+  line-height: 1;
+}
+
 @media (max-width: 1199.98px) {
   .oferta-valor-banner {
     min-height: 480px;
@@ -775,5 +799,10 @@
 
   .oferta-banner-subtitle {
     margin-bottom: 1.4rem;
+  }
+
+  .oferta-banner-content .btn-programas {
+    width: 100%;
+    max-width: 100%;
   }
 }
