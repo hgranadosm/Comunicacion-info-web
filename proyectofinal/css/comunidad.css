@@ -317,3 +317,96 @@
 .banner-section {
   background-image: url('../img/comunidad/banner.jpg');
 }
+
+.com-inside-section {
+  background: linear-gradient(180deg, #f7faf6 0%, #eef5eb 100%);
+}
+
+.com-inside-section .container {
+  max-width: min(1240px, 90vw);
+}
+
+.com-inside-shell {
+  padding: 1.9rem 1.6rem;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.com-inside-shell .row {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.com-inside-copy {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.com-inside-kicker {
+  color: #7BA32B;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.com-inside-title {
+  color: #234F20;
+  font-size: clamp(1.9rem, 3.2vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.com-inside-text {
+  color: #234F20;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 48ch;
+}
+
+.com-inside-qr-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.com-inside-qr {
+  width: min(100%, 290px);
+  background: #ffffff;
+  border: 1px solid #dfe9dc;
+  padding: 1rem;
+  box-shadow: 0 12px 28px rgba(35, 79, 32, 0.12);
+}
+
+@media (max-width: 991.98px) {
+  .com-inside-section .container {
+    max-width: 94vw;
+  }
+
+  .com-inside-shell {
+    padding: 1.35rem 1.15rem;
+  }
+
+  .com-inside-shell .row {
+    max-width: none;
+  }
+
+  .com-inside-copy {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .com-inside-copy .com-inside-title {
+    margin-top: 2rem;
+  }
+
+  .com-inside-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .com-inside-qr {
+    width: min(100%, 240px);
+  }
+}
