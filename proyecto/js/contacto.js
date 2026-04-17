@@ -1,5 +1,5 @@
 (function () {
-  emailjs.init('l_I6FFQCf9gyONQxk'); // Reemplaza con tu Public Key de EmailJS
+  emailjs.init('l_I6FFQCf9gyONQxk');
 
   var form = document.getElementById('contactoForm');
   var successMsg = document.getElementById('conSuccessMsg');

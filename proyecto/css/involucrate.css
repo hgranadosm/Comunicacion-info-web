@@ -13,7 +13,6 @@
   font-weight: 800;
 }
 
-/* Premium Cards Layout */
 .inv-cards-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -38,7 +37,6 @@
   box-shadow: 0 20px 40px rgba(35, 79, 32, 0.15);
 }
 
-/* Card Image Section */
 .inv-card-image {
   width: 100%;
   height: 240px;
@@ -61,7 +59,6 @@
   opacity: 1;
 }
 
-/* Background images for each card - with color fallback */
 .apoya-bg {
   background-color: #234F20;
   background-image: linear-gradient(135deg, rgba(35, 79, 32, 0.7), rgba(47, 103, 41, 0.7));
@@ -90,7 +87,6 @@
   background-position: center;
 }
 
-/* Card Number Badge */
 .inv-card-number {
   position: absolute;
   top: 14px;
@@ -109,7 +105,6 @@
   z-index: 10;
 }
 
-/* Card Body */
 .inv-card-body {
   padding: 2rem;
   flex-grow: 1;
@@ -151,7 +146,6 @@
   flex-grow: 1;
 }
 
-/* Card Features List */
 .inv-card-features {
   list-style: none;
   padding: 0;
@@ -189,7 +183,6 @@
   box-shadow: 0 4px 18px rgba(35, 79, 32, 0.08);
 }
 
-/* Un día en CEFI - Journey Section */
 .cefi-journey-wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -258,7 +251,6 @@
   margin: 0;
 }
 
-/* Responsive - Tablet */
 @media (max-width: 1199.98px) {
   .cefi-journey-wrapper {
     grid-template-columns: repeat(3, 1fr);
@@ -284,7 +276,6 @@
   }
 }
 
-/* Responsive - Mobile */
 @media (max-width: 767.98px) {
   .cefi-journey-wrapper {
     grid-template-columns: 1fr;

@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Margarine&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/********************* ESTILOS GENRALES ******************************/
 
 html {
     font-size: 16px;
 }
-
-
 
 
 body {
@@ -400,7 +397,7 @@ body {
 
 .navbar {
   position: relative;
-  z-index: 999; /* Para que quede encima del overlay */
+  z-index: 999; 
 }
 
 .menu-overlay {

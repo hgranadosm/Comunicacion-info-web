@@ -1,7 +1,6 @@
 (function () {
-  emailjs.init('l_I6FFQCf9gyONQxk'); // Reemplaza con tu Public Key de EmailJS
+  emailjs.init('l_I6FFQCf9gyONQxk');
 
-  // Formulario de suscripción
   var subForm = document.querySelector('form[aria-label="Formulario de suscripción"]');
   if (subForm) {
     var subFeedback = document.createElement('div');
@@ -40,7 +39,6 @@
     });
   }
 
-  // Contadores animados
   var counters = document.querySelectorAll('.js-counter');
   if (!counters.length) return;
 
