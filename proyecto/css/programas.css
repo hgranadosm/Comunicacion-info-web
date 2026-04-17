@@ -76,12 +76,13 @@
   position: relative;
   padding-inline: 3rem;
   z-index: 1;
+  overflow: hidden;
 }
 
 .program-slider-track {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(280px, calc((100% - 2.4rem) / 3));
+  grid-auto-columns: calc((100% - 2.4rem) / 3);
   gap: 1.2rem;
   overflow-x: auto;
   scrollbar-width: none;
@@ -103,8 +104,8 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 48px;
-  height: 48px;
+  width: 35px;
+  height: 35px;
   border: none;
   border-radius: 50%;
   display: inline-flex;
@@ -112,7 +113,6 @@
   justify-content: center;
   background: #ffffff;
   color: #2f8a3e;
-  box-shadow: 0 8px 22px rgba(35, 79, 32, 0.18);
   z-index: 10;
   pointer-events: auto;
   cursor: pointer;
@@ -120,11 +120,11 @@
 }
 
 .program-slider-btn.prev {
-  left: 0;
+  left: 2px;
 }
 
 .program-slider-btn.next {
-  right: 0;
+  right: 2px;
 }
 
 .program-slider-btn:hover:not(:disabled),
